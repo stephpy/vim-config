@@ -1,65 +1,32 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Jul 02
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" ===================================
+" s.py .vimrc config
+" contact: py.stephane1(at)gmail.com
+" ===================================
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
+" Include user's local vim config
+if filereadable(expand("~/.vim/vimrc"))
+  source ~/.vim/vimrc
+endif
+
+if filereadable(expand("~/.vim/php-doc.vim"))
+    source ~/.vim/php-doc.vim
 endif
 
 set cursorline
-
-" awesome stuff on MacVim
-if has("gui_macvim")
-" Disable toolbar on MacVim
-set go-=T
-" MacVim font and color scheme
-set guifont=Inconsolata-g:h13
-colorscheme symfony 
-endif
-
 set encoding=utf-8
 
-source ~/.vim/php-doc.vim
-
-" to highlight HTML in string
-let php_htmlInStrings=1
-
-" to disable short tags
-let php_noShortTags = 1
-
-" to enable folding for classes and functions
-"let php_folding = 1
-
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
 set nocompatible
-set nobackup
-" delete backup
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+set nobackup " delete backup
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=50	 " keep 50 lines of command line history
+set ruler		 " show the cursor position all the time
+set showcmd		 " display incomplete commands
+set incsearch    " do incremental searching
 
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
+set expandtab
+set shiftwidth=4 "nombre d'espace apres un '>>'"
+set tabstop=4    "nombre de place que prend une tabulation"
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -72,6 +39,24 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+" awesome stuff on MacVim
+if has("gui_macvim")
+    set go-=T " Disable toolbar on MacVim
+    colorscheme symfony 
+endif
+
+let php_htmlInStrings=1 " to highlight HTML in string
+let php_noShortTags = 1 " to disable short tags
+"let php_folding = 1 " to enable folding for classes and functions
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
+
 
 "oNLy do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -102,9 +87,7 @@ if has("autocmd")
   augroup END
 
 else
-
   set autoindent		" always set autoindenting on
-
 endif " has("autocmd")
 
 " Convenient command to see the difference between the current buffer and the
@@ -114,10 +97,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
-set expandtab
-set shiftwidth=4 "nombre d'espace apres un '>>'"
-set tabstop=4 "nombre de place que prend une tabulation"
 
 "run file with PHP CLI (CTRL-M)
 ":autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
