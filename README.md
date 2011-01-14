@@ -1,10 +1,39 @@
-My VIM config, using Janus plugins:
+cpnfotehwin VIM config, py.stephane1(at)gmail.com - http://imspy.fr
+==================================================================
 
-- NerdTree
-- Command-T
-- Snippets
-- PhpDoc
-- etc ...
+Using pathogen plugin (to set unobstrusive plugins)
 
-Actually is OK on Leopard on MACVIM and VIM
-Have an error on snow leopad on VIM but is ok for MACVIM
+Plugin list:
+
+- Align
+- ack
+- autoclose
+- bufexplorer
+- command-t
+- jQuery
+- javascript
+- nerdcommenter
+- nerdtree
+- snipMate
+- supertab
+- vim-cucumber
+- vim-fugitive
+- vim-git
+- vim-haml
+- vim-indent-object
+- vim-markdown
+- vim-rspec
+- vim-surround
+- vim-unimpaired
+- vim-vividchalk
+- zoomWin
+
+
+# To install
+
+git clone git://github.com/cpnfortehwin/vim-config.git
+
+mv vim-config/.vim ~/.vim
+cd ~
+ln -s ~/.vim/.vimrc
+ln -s ~/.vim/.gimrc
