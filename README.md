@@ -33,7 +33,7 @@ Plugin list:
 
 git clone git://github.com/cpnfortehwin/vim-config.git
 
-mv vim-config/.vim ~/.vim
-cd ~
-ln -s ~/.vim/.vimrc
-ln -s ~/.vim/.gimrc
+- mv vim-config/.vim ~/.vim
+- cd ~
+- ln -s ~/.vim/.vimrc
+- ln -s ~/.vim/.gimrc
