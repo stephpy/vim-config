@@ -1,0 +1,25 @@
+Vim with Rspec
+
+INSTALL
+-------
+This plugin make easy to run the spec command inside Vim. You need Hpricot (http://wiki.github.com/why/hpricot) 
+OR xsltproc (http://www.xmlsoft.org/XSLT/xsltproc2.html) and grep (http://www.gnu.org/software/grep) to use it.
+Hpricot takes precedence over xsltproc. 
+There are four files on the package: the Vim script, the Ruby script, the XSL file and the syntax file.
+
+To install, unpack the files on your ~/.vim directory and source it to make it available. You
+can also use the Makefile to install the files, just type:
+make install
+
+USAGE
+-----
+There are two commands available: 
+
+You can run RunSpec and spec will run with the current file (if it's a *_spec.rb file) 
+You can run RunSpecs and spec will run with all the files inside the spec directory. 
+
+After some of the commands above runs, it will open a new window with the result, where you can click on the error 
+lines where there's a file path with the line number and it will open on a new window, moving the cursor to the 
+line where the error is.
+
+Of course, you can create some mappings to make easier to call the commands.

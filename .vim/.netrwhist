@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/al-c4pon3/Sites/ape'
+let g:netrw_dirhist_2='/Users/al-c4pon3/Sites/myblog'
+let g:netrw_dirhist_3='/Users/al-c4pon3/Sites/myblog/web'
+let g:netrw_dirhist_4='/Users/al-c4pon3/Sites/myblog'
+let g:netrw_dirhist_5='/Users/al-c4pon3/Sites/myblog/web'
+let g:netrw_dirhist_6='/Users/al-c4pon3/Sites/myblog'
+let g:netrw_dirhist_7='/Users/al-c4pon3/.vim/bundle/command-t'
