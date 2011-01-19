@@ -4,9 +4,9 @@
 " ===================================
 
 " Include user's local vim config
-if filereadable(expand("~/.vim/vimrc"))
-  source ~/.vim/vimrc
-endif
+"if filereadable(expand("~/.vim/vimrc"))
+"  source ~/.vim/vimrc
+"endif
 
 syntax on
 filetype plugin on
@@ -40,8 +40,6 @@ endif
 " Command-T configuration
 let g:CommandTMaxHeight=20
 map <Leader>t :CommandT<CR>
-
-
 
 " jQuery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
