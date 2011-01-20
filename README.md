@@ -39,3 +39,5 @@ Plugin list:
 - cd ~
 - ln -s ~/.vim/.vimrc
 - ln -s ~/.vim/.gimrc
+
+# For php doc, change the file /bundle/php-doc/plugin/php-doc.vim and add your name and other options
