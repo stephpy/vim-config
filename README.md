@@ -15,6 +15,7 @@ Plugin list:
 - nerdcommenter     => Comment code (not work actually :o)
 - nerdtree          => Tree of project
 - php               => php tools
+- php-doc           => php doc
 - snipMate          => As on textmate, easily add shortcut to create snippets
 - supertab          => Some function for <tab>
 - vcscommand        => CVS/SVN/SVK/git/hg/bzr integration plugin 
