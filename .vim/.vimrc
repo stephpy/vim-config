@@ -20,6 +20,7 @@ set nocompatible
 set nobackup " delete backup
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
+set autoindent
 set history=50	 " keep 50 lines of command line history
 set ruler		 " show the cursor position all the time
 set showcmd		 " display incomplete commands
@@ -43,3 +44,9 @@ map <Leader>t :CommandT<CR>
 
 " jQuery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+
+" php-doc
+source ~/.vim/bundle/php-doc/plugin/php-doc.vim 
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR> 
