@@ -8,8 +8,9 @@
 "  source ~/.vim/vimrc
 "endif
 
-syntax on
-filetype plugin on
+syntax on                 " syntax highlighing
+filetype on               " try to detect filetypes
+filetype plugin on        " enable loading indent file for filetype
 
 call pathogen#runtime_append_all_bundles()
 
@@ -17,20 +18,26 @@ set cursorline
 set encoding=utf-8
 
 set nocompatible
-set nobackup " delete backup
+set nobackup                   " delete backup
+set noswapfile
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
-set autoindent
-set history=50	 " keep 50 lines of command line history
-set ruler		 " show the cursor position all the time
-set showcmd		 " display incomplete commands
-set incsearch    " do incremental searching
-set vb t_vb=     " no beeping"
+set autoindent                 " always set autoindenting on
+set number                     " show line numbers
+set history=50                 " keep 50 lines of command line history
+set ruler                      " show the cursor position all the time
+set showcmd                    " display incomplete commands
+set incsearch                  " do incremental searching
+set visualbell t_vb=           " turn off error beep/flash
+set novisualbell               " turn off visual bell
+set title                      " show title in console title bar
+set ttyfast                    " smoother changes
 
 set expandtab
-set shiftwidth=4 "nombre d'espace apres un '>>'"
-set tabstop=4    "nombre de place que prend une tabulation"
+set shiftwidth=4               " nombre d'espace apres un '>>'
+set tabstop=4                  " nombre de place que prend une tabulation
 set hlsearch
+set ignorecase                 " ignore case when searching
 
 autocmd BufWritePre * :%s/\s\+$//e "delete spaces at end of line
 
