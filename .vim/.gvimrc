@@ -4,7 +4,7 @@ if has("gui_macvim")
     " Fullscreen takes up entire screen
     set fuoptions=maxhorz,maxvert
     " Fullscreen mode for F5
-    map <C-CR> :set invfu<CR>
+    map <D-CR> :set invfu<CR>
     " Start without the toolbar
     set guioptions-=T
 endif
