@@ -39,8 +39,6 @@ set tabstop=4                  " nombre de place que prend une tabulation
 set hlsearch
 set ignorecase                 " ignore case when searching
 
-autocmd BufWritePre * :%s/\s\+$//e "delete spaces at end of line
-
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
@@ -51,16 +49,19 @@ let g:CommandTMaxHeight=20
 map <D-t> :CommandT<CR>
 map <C-t> :CommandT<CR>
 map <C-y> :NERDTree<CR>
-map <D-F> :Ack<CR>
+map <C-f> :Ack
 
 " jQuery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
-" php-doc
-source ~/.vim/bundle/php-doc/plugin/php-doc.vim
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
+" php syntax
+autocmd FileType php noremap <C-L> :!php -l %<CR>
+autocmd FileType php source ~/.vim/bundle/php-doc/plugin/php-doc.vim
+autocmd FileType php inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
+autocmd FileType php nnoremap <C-P> :call PhpDocSingle()<CR>
+autocmd FileType php vnoremap <C-P> :call PhpDocRange()<CR>
+autocmd FileType php map <C-K> :Phpcs<CR>
+autocmd BufWritePre * :%s/\s\+$//e "delete spaces at end of line
 
 "color
 colorscheme vividchalk
@@ -81,9 +82,7 @@ function s:CdIfDirectory(directory)
   endif
 endfunction
 
-"autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-"autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
 
 " NERDTree utility function
 function s:UpdateNERDTree(stay)
