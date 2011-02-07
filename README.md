@@ -12,13 +12,14 @@ Plugin list:
 - command-t         => As on textmate, searching on project a file and open it
 - jQuery            => jQuery helper
 - javascript        => Javascript helper
+- manpageview       => Manual PHP
 - nerdcommenter     => Comment code (not work actually :o)
 - nerdtree          => Tree of project
 - php               => php tools
+- phpcs             => php code sniffer
 - php-doc           => php doc
 - snipMate          => As on textmate, easily add shortcut to create snippets
 - supertab          => Some function for <tab>
-- vcscommand        => CVS/SVN/SVK/git/hg/bzr integration plugin 
 - vim-cucumber      => syntax highlighting
 - vim-fugitive      => git tools
 - vim-git           => git tools
