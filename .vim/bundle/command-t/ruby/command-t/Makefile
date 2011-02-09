@@ -4,7 +4,7 @@ SHELL = /bin/sh
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /opt/local/lib/ruby/1.8/i686-darwin9
+topdir = /opt/local/lib/ruby/1.8/i686-darwin10
 hdrdir = $(topdir)
 VPATH = $(srcdir):$(topdir):$(hdrdir)
 exec_prefix = $(prefix)
@@ -37,21 +37,21 @@ datadir = $(datarootdir)
 localstatedir = $(prefix)/var
 sitelibdir = $(sitedir)/$(ruby_version)
 
-CC = /usr/bin/gcc-4.0
+CC = /usr/bin/gcc-4.2
 LIBRUBY = $(LIBRUBY_SO)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
 LIBRUBYARG_SHARED = -l$(RUBY_SO_NAME)
 LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 
 RUBY_EXTCONF_H = 
-CFLAGS   =  -fno-common -O2 -arch i386  -fno-common -pipe -fno-common $(cflags) -arch i386
+CFLAGS   =  -fno-common -pipe -O2 -arch x86_64  -fno-common -pipe -fno-common $(cflags) -arch x86_64
 INCFLAGS = -I. -I$(topdir) -I$(hdrdir) -I$(srcdir)
 DEFS     = 
 CPPFLAGS = -DHAVE_RUBY_H -I/opt/local/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
 CXXFLAGS = $(CFLAGS) 
-ldflags  = -L. -L/opt/local/lib
+ldflags  = -L. -L/opt/local/lib -arch x86_64
 dldflags = 
-archflag = -arch i386
+archflag = -arch x86_64
 DLDFLAGS = $(ldflags) $(dldflags) $(archflag)
 LDSHARED = $(CC) -dynamic -bundle -undefined suppress -flat_namespace
 AR = ar
@@ -59,8 +59,8 @@ EXEEXT =
 
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby
-arch = i686-darwin9
-sitearch = i686-darwin9
+arch = i686-darwin10
+sitearch = i686-darwin10
 ruby_version = 1.8
 ruby = /opt/local/bin/ruby
 RUBY = $(ruby)
@@ -75,8 +75,8 @@ COPY = cp
 
 preload = 
 
-libpath = . $(libdir)
-LIBPATH =  -L. -L$(libdir)
+libpath = . $(libdir) /opt/local/lib
+LIBPATH =  -L. -L$(libdir) -L/opt/local/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
