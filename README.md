@@ -5,7 +5,7 @@ Using pathogen plugin (to set unobstrusive plugins)
 
 Plugin list:
 
-- Align             => Alignments of code
+- [http://www.vim.org/scripts/script.php?script_id=294][Align]             => Alignments of code
 - ack               => Searching on project
 - autoclose         => Autoclose ({[]})
 - bufexplorer       => Explorer of buffer
@@ -63,14 +63,4 @@ Shortcuts:
 - CTRL + P -> document a method, class, var
 - CTRL + K -> Launch php code sniffer
 
-- CTRL + W then (key) -> Align lines on key, exemple:
-
-    $a = "c";
-    $bd = "e";
-
-    With combinaiso -> CTRL + W then '=' will do:
-
-    $a  = "c";
-    $bd = "e";
-
-    See more on Align plugin
+- CTRL + W then (key) -> Align lines on key, check on AlignPlugin
