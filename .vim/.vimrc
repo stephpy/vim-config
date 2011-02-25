@@ -57,7 +57,6 @@ map <C-f> :Ack
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " php syntax
-autocmd FileType php noremap <C-L> :!php -l %<CR>
 autocmd FileType php source ~/.vim/bundle/php-doc/plugin/php-doc.vim
 autocmd FileType php inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
 autocmd FileType php nnoremap <C-P> :call PhpDocSingle()<CR>

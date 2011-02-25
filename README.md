@@ -10,16 +10,18 @@ Plugin list:
 - autoclose         => Autoclose ({[]})
 - bufexplorer       => Explorer of buffer
 - command-t         => As on textmate, searching on project a file and open it
+- check-syntax      => Plugin which check automatically syntax of files (works for php and some other languages)
+- comment           => Plugin to comment
 - jQuery            => jQuery helper
 - javascript        => Javascript helper
-- manpageview       => Manual PHP
-- nerdcommenter     => Comment code (not work actually :o)
 - nerdtree          => Tree of project
 - php               => php tools
 - phpcs             => php code sniffer
 - php-doc           => php doc
+- php-folding
 - snipMate          => As on textmate, easily add shortcut to create snippets
 - supertab          => Some function for <tab>
+- taglist
 - vim-cucumber      => syntax highlighting
 - vim-fugitive      => git tools
 - vim-git           => git tools
@@ -41,4 +43,34 @@ Plugin list:
 - ln -s ~/.vim/.vimrc
 - ln -s ~/.vim/.gimrc
 
+You can too create a .vimrc file and just do this to load .vimrc:
+
+if filereadable(expand("~/.vim/.vimrc"))
+  source ~/.vim/.vimrc
+endif
+
+
 # For php doc, change the file /bundle/php-doc/plugin/php-doc.vim and add your name and other options
+
+Shortcuts:
+
+CTRL + C -> to comment line(s) selected
+CTRL + X -> to uncomment line(s) selected
+
+CTRL + T -> Command-T
+CTRL + Y -> Open NerdTree nafication
+CTRL + F -> Ack (search on project)
+CTRL + P -> document a method, class, var
+CTRL + K -> Launch php code sniffer
+
+CTRL + W then (key) -> Align lines on key, exemple:
+
+$a = "c";
+$bd = "e";
+
+With combinaiso -> CTRL + W then '=' will do:
+
+$a  = "c";
+$bd = "e";
+
+See more on Align plugin
