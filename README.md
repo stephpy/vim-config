@@ -5,7 +5,7 @@ Using pathogen plugin (to set unobstrusive plugins)
 
 Plugin list:
 
-- [http://www.vim.org/scripts/script.php?script_id=294][Align]             => Alignments of code
+- [Align]: http://www.vim.org/scripts/script.php?script_id=294 "douda"             => Alignments of code
 - ack               => Searching on project
 - autoclose         => Autoclose ({[]})
 - bufexplorer       => Explorer of buffer
