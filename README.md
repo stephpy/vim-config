@@ -33,7 +33,6 @@ Plugin list:
 - [vim-surround][vim-surround]           => Delete/change/add parentheses/quotes/XML-tags/much more with ease
 - [vim-unimpaired][vim-unimpaired]       => Pairs of handy bracket mappings
 - [vim-vividchalk][vim-vividchalk]       => Theme
-- [zoomWin][zoomWin]                     => Zooming on file
 
 
 # To install
@@ -94,4 +93,3 @@ Shortcuts:
 [vim-surround]: http://www.vim.org/scripts/script.php?script_id=1697
 [vim-unimpaired]: http://www.vim.org/scripts/script.php?script_id=1590
 [vim-vividchalk]: http://www.vim.org/scripts/script.php?script_id=1891
-[zoomWin]: http://www.vim.org/scripts/script.php?script_id=508
