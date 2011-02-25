@@ -1,0 +1,100 @@
+*checksyntax.txt*   checksyntax -- Check syntax when saving a file (php, ruby, tex ...)
+                    Author: Tom Link, micathom at gmail com
+
+By default, |:CheckSyntax| is mapped to <F5>. The |:CheckSyntax| command 
+takes one optional argument: the mode (default: &filetype). The 
+following modes are pre-defined (and maybe some more):
+
+    c, cpp :: Check syntax via splint
+    html :: Check syntax via tidy
+    javascript :: Check syntax via jsl or gjslint
+    java :: Check syntax via jlint or javaCheckstyle
+    lua :: Parse file (luac -p)
+    php  :: Check syntax (php -l)
+    phpp :: Parse a file (php -f) (alternative php checker)
+    python :: Check file with pyflakes
+    pylint :: Use the pylint compiler plugin (alternative python checker)
+    ruby :: Check syntax (ruby -c; no auto-checks)
+    tex, latex :: Parse file (chktex -q -v0; no auto-checks)
+    xml, docbk :: Check syntax via xmllint
+
+See |g:checksyntax| for how to define your own syntax checkers.
+
+This plugin was originally based on Klaus Horsten's php_console 
+(vimscript #779) and it is the successor of php_check_syntax.vim 
+(vimscript #1272). In opposition to php_console, it is not a php 
+ftplugin but a general solution for checking the syntax when saving a 
+file (using the appropriate interpreter, lint or whatsoever).
+
+
+-----------------------------------------------------------------------
+Install~
+
+Edit the vba file and type: >
+
+    :so %
+
+See :help vimball for details. If you have difficulties or use vim 7.0, 
+please make sure, you have the current version of vimball (vimscript 
+#1502) installed or update your runtime.
+
+
+========================================================================
+Contents~
+
+        :CheckSyntax ............... |:CheckSyntax|
+        <F5> ....................... |<F5>|
+        i_<F5> ..................... |i_<F5>|
+        g:checksyntax .............. |g:checksyntax|
+        checksyntax#Check .......... |checksyntax#Check()|
+
+
+========================================================================
+plugin/checksyntax.vim~
+
+                                                    *:CheckSyntax*
+CheckSyntax[!] [NAME]
+    Check the current buffer's syntax (type defaults to &filetype).
+    Or use NAME instead of &filetype.
+    
+    With the bang !, use the alternative syntax checker (see 
+    |g:checksyntax|).
+
+                                                    *<F5>*
+<F5> ... :CheckSyntax<cr>
+
+                                                    *i_<F5>*
+i_<F5> ... <c-o>:CheckSyntax<cr>
+
+
+========================================================================
+autoload/checksyntax.vim~
+
+                                                    *g:checksyntax*
+g:checksyntax                  (default: {})
+    A dictionary {name/filetype => definition} of syntax checkers, where 
+    definition is a dictionary with the following fields:
+    
+    Mandatory (either one of the following):
+      cmd  ... A shell command used as 'makeprg' to check the file.
+      exec ... A vim command used to check the file.
+      compiler ... A vim compiler that is used to check the file.
+    
+    Optional:
+      auto ... Run automatically when saving a file.
+      efm  ... An 'errorformat' string.
+      okrx ... A |regexp| matching the command output if no error were 
+               found.
+      failrx ... A |regexp| matching the command output if an error 
+               was found.
+      alt  ... The name of an alternative syntax checker (see 
+               |:CheckSyntax|).
+      prepare ... An ex command that is run before doing anything.
+      ignore_nr ... A list of error numbers that should be ignored.
+
+                                                    *checksyntax#Check()*
+checksyntax#Check(manually, ?bang='', ?type=&ft)
+
+
+
+vim:tw=78:fo=tcq2:isk=!-~,^*,^|,^":ts=8:ft=help:norl:
