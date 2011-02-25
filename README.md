@@ -5,7 +5,7 @@ Using pathogen plugin (to set unobstrusive plugins)
 
 Plugin list:
 
-- Align             => Alignments of code
+- [Align][align]             => Alignments of code
 - ack               => Searching on project
 - autoclose         => Autoclose ({[]})
 - bufexplorer       => Explorer of buffer
@@ -64,3 +64,5 @@ Shortcuts:
 - CTRL + K -> Launch php code sniffer
 
 - CTRL + W then (key) -> Align lines on key, check on AlignPlugin
+
+[align]: http://www.vim.org/scripts/script.php?script_id=294
