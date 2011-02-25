@@ -54,16 +54,15 @@ You can too create a .vimrc file and just do this to load .vimrc:
 
 Shortcuts:
 
-- CTRL + C -> to comment line(s) selected
-- CTRL + X -> to uncomment line(s) selected
-
-- CTRL + T -> Command-T
-- CTRL + Y -> Open NerdTree nafication
-- CTRL + F -> Ack (search on project)
-- CTRL + P -> document a method, class, var
-- CTRL + K -> Launch php code sniffer
-
+- CTRL + C            -> to comment line(s) selected
+- CTRL + X            -> to uncomment line(s) selected
+- CTRL + T            -> Command-T
+- CTRL + Y            -> Open NerdTree nafication
+- CTRL + F            -> Ack (search on project)
+- CTRL + P            -> document a method, class, var
+- CTRL + K            -> Launch php code sniffer
 - CTRL + W then (key) -> Align lines on key, check on AlignPlugin
+- F5                  -> Seeing buffer explorer
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [align]: http://www.vim.org/scripts/script.php?script_id=294

@@ -52,6 +52,7 @@ map <D-t> :CommandT<CR>
 map <C-t> :CommandT<CR>
 map <C-y> :NERDTree<CR>
 map <C-f> :Ack
+map <F5> \be
 
 " jQuery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
