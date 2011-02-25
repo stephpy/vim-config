@@ -45,32 +45,32 @@ Plugin list:
 
 You can too create a .vimrc file and just do this to load .vimrc:
 
-if filereadable(expand("~/.vim/.vimrc"))
-  source ~/.vim/.vimrc
-endif
+    if filereadable(expand("~/.vim/.vimrc"))
+      source ~/.vim/.vimrc
+    endif
 
 
 # For php doc, change the file /bundle/php-doc/plugin/php-doc.vim and add your name and other options
 
 Shortcuts:
 
-CTRL + C -> to comment line(s) selected
-CTRL + X -> to uncomment line(s) selected
+- CTRL + C -> to comment line(s) selected
+- CTRL + X -> to uncomment line(s) selected
 
-CTRL + T -> Command-T
-CTRL + Y -> Open NerdTree nafication
-CTRL + F -> Ack (search on project)
-CTRL + P -> document a method, class, var
-CTRL + K -> Launch php code sniffer
+- CTRL + T -> Command-T
+- CTRL + Y -> Open NerdTree nafication
+- CTRL + F -> Ack (search on project)
+- CTRL + P -> document a method, class, var
+- CTRL + K -> Launch php code sniffer
 
-CTRL + W then (key) -> Align lines on key, exemple:
+- CTRL + W then (key) -> Align lines on key, exemple:
 
-$a = "c";
-$bd = "e";
+    $a = "c";
+    $bd = "e";
 
-With combinaiso -> CTRL + W then '=' will do:
+    With combinaiso -> CTRL + W then '=' will do:
 
-$a  = "c";
-$bd = "e";
+    $a  = "c";
+    $bd = "e";
 
-See more on Align plugin
+    See more on Align plugin
