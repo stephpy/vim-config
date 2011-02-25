@@ -20,6 +20,7 @@ Plugin list:
 - [phpcs][phpcs]                         => php code sniffer
 - [php-doc][php-doc]                     => php doc
 - [php-folding][php-folding]
+- [ragtag][ragtag]                       => html tips
 - [snipMate][snipMate]                   => As on textmate, easily add shortcut to create snippets
 - [supertab][supertab]                   => Some function for <tab>
 - [taglist][taglist]
@@ -79,6 +80,7 @@ Shortcuts:
 [phpcs]: http://www.koch.ro/blog/index.php?/archives/63-VIM-an-a-PHP-IDE.html
 [php-doc]: http://www.vim.org/scripts/script.php?script_id=1355
 [php-folding]: http://www.vim.org/scripts/script.php?script_id=1623
+[ragtag]: http://www.vim.org/scripts/script.php?script_id=1896
 [snipMate]: http://www.vim.org/scripts/script.php?script_id=2540
 [supertab]: http://www.vim.org/scripts/script.php?script_id=1643
 [taglist]: http://www.vim.org/scripts/script.php?script_id=273
