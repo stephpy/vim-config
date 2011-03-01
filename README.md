@@ -23,6 +23,7 @@ Plugin list:
 - [ragtag][ragtag]                       => html tips
 - [snipMate][snipMate]                   => As on textmate, easily add shortcut to create snippets
 - [supertab][supertab]                   => Some function for <tab>
+- [symfony][symfony]                     => Shortcuts for symfony shell
 - [taglist][taglist]
 - [vim-cucumber][vim-cucumber]           => syntax highlighting
 - [vim-fugitive][vim-fugitive]           => git tools
@@ -55,15 +56,17 @@ You can too create a .vimrc file and just do this to load .vimrc:
 
 Shortcuts:
 
-- CTRL + C            -> to comment line(s) selected
-- CTRL + X            -> to uncomment line(s) selected
-- CTRL + T            -> Command-T
-- CTRL + Y            -> Open NerdTree nafication
-- CTRL + F            -> Ack (search on project)
-- CTRL + P            -> document a method, class, var
-- CTRL + K            -> Launch php code sniffer
-- CTRL + W then (key) -> Align lines on key, check on AlignPlugin
-- F5                  -> Seeing buffer explorer
+- CTRL + C             -> to comment line(s) selected
+- CTRL + X             -> to uncomment line(s) selected
+- CTRL + T             -> Command-T
+- CTRL + Y             -> Open NerdTree nafication
+- CTRL + F             -> Ack (search on project)
+- CTRL + P             -> document a method, class, var
+- CTRL + K             -> Launch php code sniffer
+- CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
+- F5                   -> Seeing buffer explorer
+- \s (symfony command) -> Symfony
+- :Symfony *command*   -> symfony
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [align]: http://www.vim.org/scripts/script.php?script_id=294

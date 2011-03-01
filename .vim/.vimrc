@@ -45,11 +45,9 @@ if has('mouse')
   set mouse=a
 endif
 
-
 " Command-T configuration
 let g:CommandTMaxHeight=20
 let g:ragtag_global_maps = 1
-map <D-t> :CommandT<CR>
 map <C-t> :CommandT<CR>
 map <C-y> :NERDTree<CR>
 map <C-f> :Ack
