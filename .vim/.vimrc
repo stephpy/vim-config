@@ -29,6 +29,7 @@ set ruler                      " show the cursor position all the time
 set showcmd                    " display incomplete commands
 set incsearch                  " do incremental searching
 set visualbell t_vb=           " turn off error beep/flash
+set vb t_vb=""
 set novisualbell               " turn off visual bell
 set title                      " show title in console title bar
 set ttyfast                    " smoother changes
