@@ -1,6 +1,10 @@
+if !exists("g:php_path")
+	let g:php_path="php"
+endif
+
 function! s:Symfony(args)
     redraw
-    exec "!php symfony ".a:args
+    exec "!".g:php_path." symfony ".a:args
     redraw!
 endfunction
 
