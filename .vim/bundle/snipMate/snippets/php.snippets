@@ -119,7 +119,7 @@ snippet doc_h
 	 * @copyright ${4:$2}, `strftime('%d %B, %Y')`
 	 * @package ${5:default}
 	 **/
-	
+
 	/**
 	 * Define DocBlock
 	 *//
@@ -136,13 +136,9 @@ snippet doc_i
 	} // END interface $1
 # class ...
 snippet class
-	/**
-	 * ${1}
-	 **/
 	class ${2:ClassName}
 	{
-		${3}
-		function ${4:__construct}(${5:argument})
+		public function ${4:__construct}(${5:argument})
 		{
 			${6:// code...}
 		}
@@ -163,29 +159,35 @@ snippet do
 		${2:// code... }
 	} while (${1:/* condition */});
 snippet if
-	if (${1:/* condition */}) {
+	if (${1:/* condition */})
+	{
 		${2:// code...}
 	}
 snippet ife
-	if (${1:/* condition */}) {
+	if (${1:/* condition */})
+	{
 		${2:// code...}
-	} else {
+	} else
+	{
 		${3:// code...}
 	}
 	${4}
 snippet else
-	else {
+	else
+	{
 		${1:// code...}
 	}
 snippet elseif
-	elseif (${1:/* condition */}) {
+	elseif (${1:/* condition */})
+	{
 		${2:// code...}
 	}
 # Tertiary conditional
 snippet t
 	$${1:retVal} = (${2:condition}) ? ${3:a} : ${4:b};${5}
 snippet switch
-	switch ($${1:variable}) {
+	switch ($${1:variable})
+	{
 		case '${2:value}':
 			${3:// code...}
 			break;
@@ -199,11 +201,13 @@ snippet case
 		${2:// code...}
 		break;${3}
 snippet for
-	for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) {
+	for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++})
+	{
 		${4: // code...}
 	}
 snippet foreach
-	foreach ($${1:variable} as $${2:key}) {
+	foreach ($${1:variable} as $${2:key})
+	{
 		${3:// code...}
 	}
 snippet fun

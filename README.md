@@ -15,11 +15,11 @@ Plugin list:
 - [jQuery][jQuery]                       => jQuery helper
 - [javascript][javascript]               => Javascript helper
 - [nerdtree][nerdtree]                   => Tree of project
-- [pathogen][pathogen]                   => use plugins as bundle
-- [php][php]                             => php tools
-- [phpcs][phpcs]                         => php code sniffer
-- [php-doc][php-doc]                     => php doc
-- [php-folding][php-folding]
+- [pathogen][pathogen]                   => use plugins as bundle to be unobstrusive and clean.
+- [php][php]                             => php default plugin to implement some tools (colorization, highlight)
+- [phpcs][phpcs]                         => php code sniffer implemented on vim
+- [php-doc][php-doc]                     => php doc for classes, methods, vars
+- [php-folding][php-folding]             => Folding php classes, methods, operators, as php but as log maps to unfold or fold ... (arrow-keys)
 - [ragtag][ragtag]                       => html tips
 - [snipMate][snipMate]                   => As on textmate, easily add shortcut to create snippets
 - [supertab][supertab]                   => Some function for <tab>
@@ -30,29 +30,23 @@ Plugin list:
 - [vim-git][vim-git]                     => git tools
 - [vim-haml][vim-haml]                   => haml files
 - [vim-indent-object][vim-indent-object] => Text Objects based on Indentation Level
-- [vim-markdown][vim-markdown]           => markdown tools
+- [vim-markdown][vim-markdown]           => Markdown tools
 - [vim-rspec][vim-rspec]                 => Enable the use of the spec command inside Vim
 - [vim-surround][vim-surround]           => Delete/change/add parentheses/quotes/XML-tags/much more with ease
 - [vim-unimpaired][vim-unimpaired]       => Pairs of handy bracket mappings
-- [vim-vividchalk][vim-vividchalk]       => Theme
-
 
 # To install
 
 - git clone git://github.com/cpnfortehwin/vim-config.git
 - mv vim-config/.vim ~/.vim
-- cd ~
-- ln -s ~/.vim/.vimrc
-- ln -s ~/.vim/.gimrc
+# Be sure you backup your .vimrc and .gvimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup && cp ~/.gvimrc ~/.gvimrc.backup ")
+- echo "source ~/.vim/.vimrc" > ~/.vimrc
+- echo "source ~/.vim/.gvimrc" > ~/.gvimrc
 
-You can too create a .vimrc file and just do this to load .vimrc:
-
-    if filereadable(expand("~/.vim/.vimrc"))
-      source ~/.vim/.vimrc
-    endif
-
-
-# For php doc, change the file /bundle/php-doc/plugin/php-doc.vim and add your name and other options
+# Config useful
+    let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony bundle to get great php to call symfony commands
+    let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
+    let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
 
 Shortcuts:
 
@@ -67,6 +61,12 @@ Shortcuts:
 - F5                   -> Seeing buffer explorer
 - \s (symfony command) -> Symfony
 - :Symfony *command*   -> symfony
+
+[FIX]
+- Bug during the indentation of class/functions/...(all brackets) on php, do a back indent ...
+- Unset vimfugitive OR vim-git which do same works
+- What for vim-haml, cucumber ? useful ?
+- Autoclose works ? Look for an other plugin better
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [align]: http://www.vim.org/scripts/script.php?script_id=294
@@ -96,4 +96,3 @@ Shortcuts:
 [vim-rspec]: http://www.vim.org/scripts/script.php?script_id=2567
 [vim-surround]: http://www.vim.org/scripts/script.php?script_id=1697
 [vim-unimpaired]: http://www.vim.org/scripts/script.php?script_id=1590
-[vim-vividchalk]: http://www.vim.org/scripts/script.php?script_id=1891
