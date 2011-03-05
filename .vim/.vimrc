@@ -3,14 +3,10 @@
 " contact: py.stephane1(at)gmail.com
 " ===================================
 
-" Include user's local vim config
-"if filereadable(expand("~/.vim/vimrc"))
-"  source ~/.vim/vimrc
-"endif
-
 syntax on                 " syntax highlighing
 filetype on               " try to detect filetypes
 filetype plugin on        " enable loading indent file for filetype
+filetype indent on        " enable loading indent file for filetype
 
 call pathogen#runtime_append_all_bundles()
 
@@ -23,7 +19,6 @@ set noswapfile
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 set autoindent                 " always set autoindenting on
-"set number                     " show line numbers
 set history=50                 " keep 50 lines of command line history
 set ruler                      " show the cursor position all the time
 set showcmd                    " display incomplete commands
