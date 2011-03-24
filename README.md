@@ -7,7 +7,6 @@ Plugin list:
 
 - [ack][ack]                             => Searching on project
 - [Align][align]                         => Alignments of code
-- [autoclose][autoclose]                 => Autoclose ({[]})
 - [bufexplorer][bufexplorer]             => Explorer of buffer
 - [check-syntax][check-syntax]           => Plugin which check automatically syntax of files (works for php and some other languages)
 - [command-t][command-t]                 => As on textmate, searching on project a file and open it
@@ -63,7 +62,6 @@ Shortcuts:
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [align]: http://www.vim.org/scripts/script.php?script_id=294
 [ack]: http://www.vim.org/scripts/script.php?script_id=2572
-[autoclose]: http://www.vim.org/scripts/script.php?script_id=2009
 [bufexplorer]: http://www.vim.org/scripts/script.php?script_id=42
 [command-t]: http://www.vim.org/scripts/script.php?script_id=3025
 [check-syntax]: http://www.vim.org/scripts/script.php?script_id=1431
