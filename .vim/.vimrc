@@ -44,7 +44,8 @@ endif
 let g:CommandTMaxHeight=20
 let g:ragtag_global_maps = 1
 map <C-t> :CommandT<CR>
-map <C-y> :NERDTree<CR>
+map <C-y> :NERDTreeToggle<CR>
+map <C-i> :TlistToggle<CR>
 map <C-f> :Ack
 map <F5> \be
 

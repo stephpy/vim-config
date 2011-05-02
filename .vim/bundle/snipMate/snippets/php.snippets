@@ -224,3 +224,8 @@ snippet vd
 	print "<pre>";
 	var_dump(${1:var});
 	print "</pre>";
+snippet exe
+	public function execute${1:Action}(sfWebRequest $request)
+	{
+		${2:return sfView::SUCCESS;}
+	}
