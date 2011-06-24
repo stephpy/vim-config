@@ -12,6 +12,7 @@ Plugin list:
 - [command-t][command-t]                 => As on textmate, searching on project a file and open it
 - [comment][comment]                     => Plugin to comment
 - [javascript][javascript]               => Javascript helper
+- [jinja][jinja]                         => Jinja/Twig Syntax highliting
 - [jQuery][jQuery]                       => jQuery helper
 - [nerdtree][nerdtree]                   => Tree of project
 - [pathogen][pathogen]                   => use plugins as bundle to be unobstrusive and clean.
@@ -45,6 +46,8 @@ Plugin list:
     let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
     let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
 
+    coloscheme symfony
+
 Shortcuts:
 
 - CTRL + C             -> to comment line(s) selected
@@ -66,8 +69,9 @@ Shortcuts:
 [command-t]: http://www.vim.org/scripts/script.php?script_id=3025
 [check-syntax]: http://www.vim.org/scripts/script.php?script_id=1431
 [comment]: http://www.vim.org/scripts/script.php?script_id=1528
-[jQuery]: http://www.vim.org/scripts/script.php?script_id=2416
 [javascript]: http://www.vim.org/scripts/script.php?script_id=2083
+[jinja]: http://www.twig-project.org/doc/templates.html#ides-integration
+[jQuery]: http://www.vim.org/scripts/script.php?script_id=2416
 [nerdtree]: http://www.vim.org/scripts/script.php?script_id=1658
 [php]: http://www.vim.org/scripts/script.php?script_id=1571
 [phpcs]: http://www.koch.ro/blog/index.php?/archives/63-VIM-an-a-PHP-IDE.html
