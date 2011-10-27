@@ -58,6 +58,7 @@ Shortcuts:
 - CTRL + P             -> document a method, class, var
 - CTRL + K             -> Launch php code sniffer
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
+- CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
 - F5                   -> Seeing buffer explorer
 - \s (symfony command) -> Symfony
 - :Symfony *command*   -> symfony

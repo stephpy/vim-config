@@ -53,6 +53,7 @@ nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR
 
 " jQuery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
 
 " php syntax
 autocmd FileType php source ~/.vim/bundle/php-doc/plugin/php-doc.vim
