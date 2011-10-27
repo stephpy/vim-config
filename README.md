@@ -22,7 +22,7 @@ Plugin list:
 - [ragtag][ragtag]                       => html tips
 - [snipMate][snipMate]                   => As on textmate, easily add shortcut to create snippets
 - [supertab][supertab]                   => Some function for <tab>
-- [symfony][symfony]                     => Shortcuts for symfony shell
+- [symfony][symfony]                     => Shortcuts for symfony 1 shell
 - [taglist][taglist]
 - [vim-cucumber][vim-cucumber]           => syntax highlighting
 - [vim-fugitive][vim-fugitive]           => git tools
@@ -42,13 +42,13 @@ Plugin list:
     echo "source ~/.vim/.vimrc" > ~/.vimrc
     echo "source ~/.vim/.gvimrc" > ~/.gvimrc
 
-# Keep submodule updated
+# Keep submodules updated
 
 
-    git submodule foreach git pull
+    git submodule foreach git pull .
 
 # Config useful
-    let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony bundle to get great php to call symfony commands
+    let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony1 bundle to get great php to call symfony1 commands
     let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
     let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
 
@@ -66,8 +66,8 @@ Shortcuts:
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
 - CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
 - F5                   -> Seeing buffer explorer
-- \s (symfony command) -> Symfony
-- :Symfony *command*   -> symfony
+- \s (symfony command) -> symfony1
+- :Symfony *command*   -> symfony1
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [align]: http://www.vim.org/scripts/script.php?script_id=294
