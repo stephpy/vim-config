@@ -48,6 +48,8 @@ map <C-y> :NERDTreeToggle<CR>
 map <C-i> :TlistToggle<CR>
 map <C-f> :Ack
 map <F5> \be
+" Insert current namespace and opens php and create empty class, based on the file name
+nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
 " jQuery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
