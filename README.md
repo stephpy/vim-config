@@ -35,11 +35,17 @@ Plugin list:
 
 # To install
 
-- git clone git://github.com/cpnfortehwin/vim-config.git
-- mv vim-config/.vim ~/.vim
-# Be sure you backup your .vimrc and .gvimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup && cp ~/.gvimrc ~/.gvimrc.backup ")
-- echo "source ~/.vim/.vimrc" > ~/.vimrc
-- echo "source ~/.vim/.gvimrc" > ~/.gvimrc
+    git clone git://github.com/cpnfortehwin/vim-config.git
+    cd vim-config && git submodule init && git submodule update
+    mv vim-config/.vim ~/.vim
+    # Be sure you backup your .vimrc and .gvimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup && cp ~/.gvimrc ~/.gvimrc.backup ")
+    echo "source ~/.vim/.vimrc" > ~/.vimrc
+    echo "source ~/.vim/.gvimrc" > ~/.gvimrc
+
+# Keep submodule updated
+
+
+    git submodule foreach git pull
 
 # Config useful
     let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony bundle to get great php to call symfony commands
