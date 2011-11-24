@@ -24,6 +24,7 @@ Plugin list:
 - [supertab][supertab]                   => Some function for <tab>
 - [symfony][symfony]                     => Shortcuts for symfony 1 shell
 - [taglist][taglist]
+- [vim-colors-solarized][vim-colors-solarized] => Vim theme
 - [vim-cucumber][vim-cucumber]           => syntax highlighting
 - [vim-fugitive][vim-fugitive]           => git tools
 - [vim-indent-object][vim-indent-object] => Text Objects based on Indentation Level
@@ -37,6 +38,7 @@ Plugin list:
 
     git clone git://github.com/cpnfortehwin/vim-config.git
     cd vim-config && git submodule init && git submodule update
+    git submodule foreach git checkout master && git submodule foreach git pull
     mv vim-config/.vim ~/.vim
     # Be sure you backup your .vimrc and .gvimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup && cp ~/.gvimrc ~/.gvimrc.backup ")
     echo "source ~/.vim/.vimrc" > ~/.vimrc
@@ -87,6 +89,7 @@ Shortcuts:
 [snipMate]: http://www.vim.org/scripts/script.php?script_id=2540
 [supertab]: http://www.vim.org/scripts/script.php?script_id=1643
 [taglist]: http://www.vim.org/scripts/script.php?script_id=273
+[vim-colors-solarized]: https://github.com/altercation/vim-colors-solarized
 [vim-cucumber]: https://github.com/tpope/vim-cucumber
 [vim-fugitive]: http://www.vim.org/scripts/script.php?script_id=2975
 [vim-indent-object]: http://www.vim.org/scripts/script.php?script_id=3037
