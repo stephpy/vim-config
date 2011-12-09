@@ -56,10 +56,11 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
 
 " php syntax
-autocmd FileType php source ~/.vim/bundle/php-doc/plugin/php-doc.vim
-autocmd FileType php inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
-autocmd FileType php nnoremap <C-P> :call PhpDocSingle()<CR>
-autocmd FileType php vnoremap <C-P> :call PhpDocRange()<CR>
+source ~/.vim/php-doc.vim
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR>
+
 autocmd FileType php map <C-K> :Phpcs<CR>
 autocmd BufWritePre * :%s/\s\+$//e "delete spaces at end of line
 
