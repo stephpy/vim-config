@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/vim-symfony"]
 	path = .vim/bundle/vim-symfony
 	url = https://github.com/docteurklein/vim-symfony
+[submodule ".vim/bundle/vim-powerline"]
+	path = .vim/bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
