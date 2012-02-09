@@ -63,6 +63,8 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 
 autocmd FileType php map <C-K> :Phpcs<CR>
 autocmd BufWritePre * :%s/\s\+$//e "delete spaces at end of line
+autocmd BufRead * silent! %s/[\r \t]\+$//
+autocmd BufEnter *.php :%s/[ \t\r]\+$//e
 
 "color
 colorscheme vividchalk
