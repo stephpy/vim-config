@@ -14,6 +14,7 @@ Plugin list:
 - [javascript][javascript]               => Javascript helper
 - [jinja][jinja]                         => Jinja/Twig Syntax highliting
 - [jQuery][jQuery]                       => jQuery helper
+- [keepcase][keepcase]
 - [nerdtree][nerdtree]                   => Tree of project
 - [pathogen][pathogen]                   => use plugins as bundle to be unobstrusive and clean.
 - [php-doc][php-doc]                     => php doc for classes, methods, vars
@@ -24,11 +25,14 @@ Plugin list:
 - [supertab][supertab]                   => Some function for <tab>
 - [symfony][symfony]                     => Shortcuts for symfony 1 shell
 - [taglist][taglist]
+- [vim-abolish][vim-abolish]
 - [vim-colors-solarized][vim-colors-solarized] => Vim theme
 - [vim-cucumber][vim-cucumber]           => syntax highlighting
 - [vim-fugitive][vim-fugitive]           => git tools
 - [vim-indent-object][vim-indent-object] => Text Objects based on Indentation Level
+- [vim-lusty][vim-lusty]                 => jumb buffer
 - [vim-markdown][vim-markdown]           => Markdown tools
+- [vim-powerline][vim-powerline]         => Powerline theme
 - [vim-rspec][vim-rspec]                 => Enable the use of the spec command inside Vim
 - [vim-surround][vim-surround]           => Delete/change/add parentheses/quotes/XML-tags/much more with ease
 - [vim-unimpaired][vim-unimpaired]       => Pairs of handy bracket mappings
@@ -81,6 +85,7 @@ Shortcuts:
 [javascript]: http://www.vim.org/scripts/script.php?script_id=2083
 [jinja]: http://www.twig-project.org/doc/templates.html#ides-integration
 [jQuery]: http://www.vim.org/scripts/script.php?script_id=2416
+[keepcase]: https://github.com/vim-scripts/keepcase.vim
 [nerdtree]: http://www.vim.org/scripts/script.php?script_id=1658
 [php]: http://www.vim.org/scripts/script.php?script_id=1571
 [phpcs]: http://www.koch.ro/blog/index.php?/archives/63-VIM-an-a-PHP-IDE.html
@@ -89,11 +94,14 @@ Shortcuts:
 [snipMate]: http://www.vim.org/scripts/script.php?script_id=2540
 [supertab]: http://www.vim.org/scripts/script.php?script_id=1643
 [taglist]: http://www.vim.org/scripts/script.php?script_id=273
+[vim-abolish]: https://github.com/tpope/vim-abolish.git
 [vim-colors-solarized]: https://github.com/altercation/vim-colors-solarized
 [vim-cucumber]: https://github.com/tpope/vim-cucumber
 [vim-fugitive]: http://www.vim.org/scripts/script.php?script_id=2975
 [vim-indent-object]: http://www.vim.org/scripts/script.php?script_id=3037
+[vim-lusty]: https://github.com/sjbach/lusty
 [vim-markdown]: http://www.vim.org/scripts/script.php?script_id=2882
+[vim-powerline]: https://github.com/Lokaltog/vim-powerline
 [vim-rspec]: http://www.vim.org/scripts/script.php?script_id=2567
 [vim-surround]: http://www.vim.org/scripts/script.php?script_id=1697
 [vim-unimpaired]: http://www.vim.org/scripts/script.php?script_id=1590

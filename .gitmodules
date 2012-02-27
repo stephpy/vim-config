@@ -52,3 +52,12 @@
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
+[submodule ".vim/bundle/keepcase"]
+	path = .vim/bundle/keepcase
+	url = https://github.com/vim-scripts/keepcase.vim
+[submodule ".vim/bundle/vim-abolish"]
+	path = .vim/bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule ".vim/bundle/vim-lusty"]
+	path = .vim/bundle/vim-lusty
+	url = https://github.com/sjbach/lusty.git
