@@ -34,6 +34,7 @@ set tabstop=4                  " nombre de place que prend une tabulation
 set hlsearch
 set ignorecase                 " ignore case when searching
 set smarttab
+set hidden
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
