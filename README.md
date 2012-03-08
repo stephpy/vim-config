@@ -1,4 +1,4 @@
-cpnfotehwin VIM config, py.stephane1(at)gmail.com - http://imspy.fr
+StephPY VIM config, py.stephane1(at)gmail.com - http://stephpy.github.com
 ==================================================================
 
 Using pathogen plugin (to set unobstrusive plugins)
@@ -40,7 +40,7 @@ Plugin list:
 
 # To install
 
-    git clone git://github.com/cpnfortehwin/vim-config.git
+    git clone git://github.com/stephpy/vim-config.git
     cd vim-config && git submodule init && git submodule update
     git submodule foreach git checkout master && git submodule foreach git pull
     mv vim-config/.vim ~/.vim
