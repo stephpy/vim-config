@@ -38,6 +38,12 @@ Plugin list:
 
 # To install
 
+    One Shot:
+
+    wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
+
+    OR
+
     git clone git://github.com/stephpy/vim-config.git
     cd vim-config && git submodule init && git submodule update
     cd .. && ln -s vim-config/.vim ~/.vim
