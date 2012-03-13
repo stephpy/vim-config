@@ -30,7 +30,6 @@ Plugin list:
 - [vim-cucumber][vim-cucumber]           => syntax highlighting
 - [vim-fugitive][vim-fugitive]           => git tools
 - [vim-indent-object][vim-indent-object] => Text Objects based on Indentation Level
-- [vim-lusty][vim-lusty]                 => jumb buffer
 - [vim-markdown][vim-markdown]           => Markdown tools
 - [vim-powerline][vim-powerline]         => Powerline theme
 - [vim-rspec][vim-rspec]                 => Enable the use of the spec command inside Vim
@@ -42,16 +41,10 @@ Plugin list:
 
     git clone git://github.com/stephpy/vim-config.git
     cd vim-config && git submodule init && git submodule update
-    git submodule foreach git checkout master && git submodule foreach git pull
-    mv vim-config/.vim ~/.vim
+    cd .. && ln -s vim-config/.vim ~/.vim
     # Be sure you backup your .vimrc and .gvimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup && cp ~/.gvimrc ~/.gvimrc.backup ")
     echo "source ~/.vim/.vimrc" > ~/.vimrc
     echo "source ~/.vim/.gvimrc" > ~/.gvimrc
-
-# Keep submodules updated
-
-
-    git submodule foreach git pull .
 
 # Config useful
     let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony1 bundle to get great php to call symfony1 commands
@@ -99,7 +92,6 @@ Shortcuts:
 [vim-cucumber]: https://github.com/tpope/vim-cucumber
 [vim-fugitive]: http://www.vim.org/scripts/script.php?script_id=2975
 [vim-indent-object]: http://www.vim.org/scripts/script.php?script_id=3037
-[vim-lusty]: https://github.com/sjbach/lusty
 [vim-markdown]: http://www.vim.org/scripts/script.php?script_id=2882
 [vim-powerline]: https://github.com/Lokaltog/vim-powerline
 [vim-rspec]: http://www.vim.org/scripts/script.php?script_id=2567
