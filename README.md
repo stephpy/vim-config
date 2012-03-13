@@ -1,6 +1,20 @@
 StephPY VIM config, py.stephane1(at)gmail.com - http://stephpy.github.com
 ==================================================================
 
+# Installation
+
+    One Shot:
+
+    wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
+
+    OR
+
+    git clone git://github.com/stephpy/vim-config.git
+    cd vim-config && git submodule init && git submodule update
+    cd .. && ln -s vim-config/.vim ~/.vim
+    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
+    echo "source ~/.vim/.vimrc" > ~/.vimrc
+
 Using pathogen plugin (to set unobstrusive plugins)
 
 Plugin list:
@@ -35,20 +49,6 @@ Plugin list:
 - [vim-surround][vim-surround]           => Delete/change/add parentheses/quotes/XML-tags/much more with ease
 - [vim-unimpaired][vim-unimpaired]       => Pairs of handy bracket mappings
 - [zencoding-vim][zencoding-vim]         => Zencoding for vim
-
-# To install
-
-    One Shot:
-
-    wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
-
-    OR
-
-    git clone git://github.com/stephpy/vim-config.git
-    cd vim-config && git submodule init && git submodule update
-    cd .. && ln -s vim-config/.vim ~/.vim
-    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
-    echo "source ~/.vim/.vimrc" > ~/.vimrc
 
 # Useful configs
     let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony1 bundle to get great php to call symfony1 commands
