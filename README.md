@@ -46,7 +46,7 @@ Plugin list:
     echo "source ~/.vim/.vimrc" > ~/.vimrc
     echo "source ~/.vim/.gvimrc" > ~/.gvimrc
 
-# Config useful
+# Useful configs
     let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony1 bundle to get great php to call symfony1 commands
     let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
     let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
@@ -57,14 +57,14 @@ Shortcuts:
 
 - CTRL + C             -> to comment line(s) selected
 - CTRL + X             -> to uncomment line(s) selected
-- CTRL + T             -> Command-T
-- CTRL + Y             -> Open NerdTree nafication
-- CTRL + F             -> Ack (search on project)
-- CTRL + P             -> document a method, class, var
+- CTRL + T             -> Command-T **need ruby on your vim !**
+- CTRL + Y             -> Open NerdTree navigation
+- CTRL + F             -> Ack (search on project) **Need ack (betterthangrep.com)**
+- CTRL + P             -> phpdoc
 - CTRL + K             -> Launch php code sniffer
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
 - CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
-- F5                   -> Seeing buffer explorer
+- F5 OR \be            -> Seeing buffer explorer
 - \s (symfony command) -> symfony1
 - :Symfony *command*   -> symfony1
 
