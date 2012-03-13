@@ -13,7 +13,6 @@ Plugin list:
 - [comment][comment]                     => Plugin to comment
 - [javascript][javascript]               => Javascript helper
 - [jinja][jinja]                         => Jinja/Twig Syntax highliting
-- [jQuery][jQuery]                       => jQuery helper
 - [keepcase][keepcase]
 - [nerdtree][nerdtree]                   => Tree of project
 - [pathogen][pathogen]                   => use plugins as bundle to be unobstrusive and clean.
@@ -42,9 +41,8 @@ Plugin list:
     git clone git://github.com/stephpy/vim-config.git
     cd vim-config && git submodule init && git submodule update
     cd .. && ln -s vim-config/.vim ~/.vim
-    # Be sure you backup your .vimrc and .gvimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup && cp ~/.gvimrc ~/.gvimrc.backup ")
+    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
     echo "source ~/.vim/.vimrc" > ~/.vimrc
-    echo "source ~/.vim/.gvimrc" > ~/.gvimrc
 
 # Useful configs
     let g:php_path="/Applications/MAMP/bin/php5.3/bin/php"         " used by symfony1 bundle to get great php to call symfony1 commands
@@ -77,7 +75,6 @@ Shortcuts:
 [comment]: http://www.vim.org/scripts/script.php?script_id=1528
 [javascript]: http://www.vim.org/scripts/script.php?script_id=2083
 [jinja]: http://www.twig-project.org/doc/templates.html#ides-integration
-[jQuery]: http://www.vim.org/scripts/script.php?script_id=2416
 [keepcase]: https://github.com/vim-scripts/keepcase.vim
 [nerdtree]: http://www.vim.org/scripts/script.php?script_id=1658
 [php]: http://www.vim.org/scripts/script.php?script_id=1571

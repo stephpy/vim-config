@@ -10,6 +10,10 @@ filetype indent on        " enable loading indent file for filetype
 
 call pathogen#runtime_append_all_bundles()
 
+" ===================================
+" Configuration
+" ===================================
+
 set cursorline
 set encoding=utf-8
 
@@ -36,39 +40,29 @@ set ignorecase                 " ignore case when searching
 set smarttab
 set hidden
 
+"color
+colorscheme vividchalk
+
+"delete spaces at end of line
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufRead * silent! %s/[\r \t]\+$//
+autocmd BufEnter *.php :%s/[ \t\r]\+$//e
+
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
 endif
 
-" Command-T configuration
+" ===================================
+" Bundles configuration
+" ===================================
+
 let g:CommandTMaxHeight=20
 let g:ragtag_global_maps = 1
-map <C-t> :CommandT<CR>
-map <C-y> :NERDTreeToggle<CR>
-map <C-i> :TlistToggle<CR>
-map <C-f> :Ack
-map <F5> \be
-" Insert current namespace and opens php and create empty class, based on the file name
-nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
-
-" jQuery
-au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+" Syntax coloration of twig files
 au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
-
-" php syntax
+" php doc syntax
 source ~/.vim/php-doc.vim
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
-
-autocmd FileType php map <C-K> :Phpcs<CR>
-autocmd BufWritePre * :%s/\s\+$//e "delete spaces at end of line
-autocmd BufRead * silent! %s/[\r \t]\+$//
-autocmd BufEnter *.php :%s/[ \t\r]\+$//e
-
-"color
-colorscheme vividchalk
 
 " Project Tree
 " Disable netrw's autocmd, since we're ALWAYS using NERDTree
@@ -78,3 +72,23 @@ augroup FileExplorer
 augroup END
 
 let g:NERDTreeHijackNetrw = 0
+
+" ===================================
+" Mapping
+" ===================================
+
+map <C-t> :CommandT<CR>
+map <C-y> :NERDTreeToggle<CR>
+map <C-i> :TlistToggle<CR>
+map <C-f> :Ack
+map <F5> \be
+
+" Insert current namespace and opens php and create empty class, based on the file name
+nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
+
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR>
+
+" Code sniffer
+autocmd FileType php map <C-K> :Phpcs<CR>
