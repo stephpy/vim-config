@@ -47,6 +47,7 @@ colorscheme vividchalk
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter *.php :%s/[ \t\r]\+$//e
+autocmd BufEnter *.php :retab
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
