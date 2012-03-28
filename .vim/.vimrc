@@ -65,6 +65,8 @@ au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
 " php doc syntax
 source ~/.vim/php-doc.vim
 
+let g:pdv_cfg_php4always=0 "using php5 doc tags
+
 " Project Tree
 " Disable netrw's autocmd, since we're ALWAYS using NERDTree
 runtime plugin/netRwPlugin.vim
