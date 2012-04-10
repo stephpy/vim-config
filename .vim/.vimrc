@@ -58,7 +58,6 @@ endif
 " Bundles configuration
 " ===================================
 
-let g:CommandTMaxHeight=20
 let g:ragtag_global_maps = 1
 " Syntax coloration of twig files
 au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
@@ -80,7 +79,8 @@ let g:NERDTreeHijackNetrw = 0
 " Mapping
 " ===================================
 
-map <C-t> :CommandT<CR>
+set wildignore+=*/cache/*,*/logs/*,*.swp,*/.git/*
+
 map <C-y> :NERDTreeToggle<CR>
 map <C-i> :TlistToggle<CR>
 map <C-f> :Ack
@@ -89,9 +89,9 @@ map <F5> \be
 " Insert current namespace and opens php and create empty class, based on the file name
 nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
+inoremap <C-D> <ESC>:call PhpDocSingle()<CR>
+nnoremap <C-D> :call PhpDocSingle()<CR>
+vnoremap <C-D> :call PhpDocRange()<CR>
 
 " Code sniffer
 autocmd FileType php map <C-K> :Phpcs<CR>

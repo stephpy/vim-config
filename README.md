@@ -23,7 +23,7 @@ Plugin list:
 - [Align][align]                         => Alignments of code
 - [bufexplorer][bufexplorer]             => Explorer of buffer
 - [check-syntax][check-syntax]           => Plugin which check automatically syntax of files (works for php and some other languages)
-- [command-t][command-t]                 => As on textmate, searching on project a file and open it
+- [ctrlp][ctrlp]                 => As on textmate, searching on project a file and open it
 - [comment][comment]                     => Plugin to comment
 - [javascript][javascript]               => Javascript helper
 - [jinja][jinja]                         => Jinja/Twig Syntax highliting
@@ -61,7 +61,7 @@ Shortcuts:
 
 - CTRL + C             -> to comment line(s) selected
 - CTRL + X             -> to uncomment line(s) selected
-- CTRL + T             -> Command-T **need ruby on your vim !**
+- CTRL + P             -> CTRL-P
 - CTRL + Y             -> Open NerdTree navigation
 - CTRL + F             -> Ack (search on project) **Need ack (betterthangrep.com)**
 - CTRL + P             -> phpdoc
@@ -76,7 +76,7 @@ Shortcuts:
 [align]: http://www.vim.org/scripts/script.php?script_id=294
 [ack]: http://www.vim.org/scripts/script.php?script_id=2572
 [bufexplorer]: http://www.vim.org/scripts/script.php?script_id=42
-[command-t]: http://www.vim.org/scripts/script.php?script_id=3025
+[ctrl-p]: https://github.com/kien/ctrlp.vim
 [check-syntax]: http://www.vim.org/scripts/script.php?script_id=1431
 [comment]: http://www.vim.org/scripts/script.php?script_id=1528
 [javascript]: http://www.vim.org/scripts/script.php?script_id=2083
