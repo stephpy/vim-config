@@ -75,11 +75,12 @@ augroup END
 
 let g:NERDTreeHijackNetrw = 0
 
+set wildignore+=*/cache/*,*/logs/*,*.swp,*/.git/*
+
 " ===================================
 " Mapping
 " ===================================
 
-set wildignore+=*/cache/*,*/logs/*,*.swp,*/.git/*
 
 map <C-y> :NERDTreeToggle<CR>
 map <C-i> :TlistToggle<CR>
