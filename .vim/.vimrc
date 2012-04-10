@@ -112,6 +112,7 @@ set wildignore+=*/cache/*,*/logs/*,*.swp,*/.git/*
 " ===================================
 
 map <C-y> :NERDTreeToggle<CR>
+map <C-i> :TlistToggle<CR>
 map <C-f> :Ack
 
 " Insert current namespace and opens php and create empty class, based on the file name
