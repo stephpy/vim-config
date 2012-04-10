@@ -39,11 +39,13 @@ echo "\033[0;34mCloning Vim config\033[0m"
 echo "\033[0;34mUpdate submodules\033[0m"
 
 cd $HOME/vim-config
-git submodule init
-git submodule update
 
 ln -s $HOME/vim-config/.vim $HOME/.vim
 ln -s $HOME/.vim/.vimrc $HOME/.vimrc
+
+echo "\033[0;34mInstalling vundle \033[0m"
+mkdir $HOME/.vim/bundle
+git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 echo "\033[0;32m"'       .__          '"\033[0m"
 echo "\033[0;32m"' ___  _|__| _____   '"\033[0m"
