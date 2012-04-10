@@ -1,33 +1,33 @@
 if [ -d $HOME/.vim ] || [ -h $HOME/.vim ]
 then
-    echo '.vim file already exists, delete it ? (y/n)' && read response && \
+    echo '.vim file already exists, backup it ? (y/n)' && read response && \
     if [ "$response" == "y" ]
     then
-        rm -rf $HOME/.vim
+        mv -rf $HOME/.vim $HOME/.vim.$today
     else
-        exit
+        rm -rf $HOME/.vim
     fi
 fi
 
 if [ -f $HOME/.vimrc ] || [ -h $HOME/.vimrc ]
 then
-    echo '.vimrc file already exists, delete it ? (y/n)' && read response && \
+    echo '.vimrc file already exists, backup it ? (y/n)' && read response && \
     if [ "$response" == "y" ]
     then
-        rm $HOME/.vimrc
+        mv $HOME/.vimrc $HOME/.vimrc.$today
     else
-        exit
+        rm $HOME/.vimrc
     fi
 fi
 
 if [ -d $HOME/vim-config ]
 then
-    echo 'vim-config file already exists, delete it ? (y/n)' && read response && \
+    echo 'vim-config file already exists, backup it ? (y/n)' && read response && \
     if [ "$response" == "y" ]
     then
-        rm -rf $HOME/vim-config
+        mv $HOME/vim-config $HOME/vim-config.$today
     else
-        exit
+        rm -rf $HOME/vim-config
     fi
 fi
 
