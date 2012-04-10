@@ -58,6 +58,10 @@ endif
 " Bundles configuration
 " ===================================
 
+"The default leader is '\', but many people prefer ',' as it's in a standard
+"location
+let mapleader = ','
+
 let g:ragtag_global_maps = 1
 " Syntax coloration of twig files
 au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
@@ -74,13 +78,13 @@ augroup FileExplorer
 augroup END
 
 let g:NERDTreeHijackNetrw = 0
+let ctrlp_match_window_reversed=0
 
 set wildignore+=*/cache/*,*/logs/*,*.swp,*/.git/*
 
 " ===================================
 " Mapping
 " ===================================
-
 
 map <C-y> :NERDTreeToggle<CR>
 map <C-i> :TlistToggle<CR>
