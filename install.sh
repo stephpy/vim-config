@@ -1,9 +1,10 @@
+today=`date +%Y%m%d`
 if [ -d $HOME/.vim ] || [ -h $HOME/.vim ]
 then
     echo '.vim file already exists, backup it ? (y/n)' && read response && \
     if [ "$response" == "y" ]
     then
-        mv -rf $HOME/.vim $HOME/.vim.$today
+        mv $HOME/.vim $HOME/.vim.$today
     else
         rm -rf $HOME/.vim
     fi
