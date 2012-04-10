@@ -10,12 +10,20 @@ StephPY VIM config, py.stephane1(at)gmail.com - http://stephpy.github.com
     OR
 
     git clone git://github.com/stephpy/vim-config.git
-    cd vim-config && git submodule init && git submodule update
-    cd .. && ln -s vim-config/.vim ~/.vim
-    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
-    echo "source ~/.vim/.vimrc" > ~/.vimrc
+    ln -s vim-config/.vim ~/.vim
+    mkdir ~/.vim/bundle
+    git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
-Using pathogen plugin (to set unobstrusive plugins)
+    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
+    ln -s ~/.vim/.vimrc ~/.vimrc
+
+    vim +BundleInstall
+
+# Override
+
+Define a ~/.vimrc.local and set your config on (or bundles)
+
+Using vundlep lugin (to set unobstrusive plugins)
 
 Plugin list:
 
@@ -25,7 +33,6 @@ Plugin list:
 - [check-syntax][check-syntax]           => Plugin which check automatically syntax of files (works for php and some other languages)
 - [ctrlp][ctrlp]                 => As on textmate, searching on project a file and open it
 - [comment][comment]                     => Plugin to comment
-- [javascript][javascript]               => Javascript helper
 - [jinja][jinja]                         => Jinja/Twig Syntax highliting
 - [keepcase][keepcase]
 - [nerdtree][nerdtree]                   => Tree of project
@@ -64,22 +71,18 @@ Shortcuts:
 - CTRL + P             -> CTRL-P
 - CTRL + Y             -> Open NerdTree navigation
 - CTRL + F             -> Ack (search on project) **Need ack (betterthangrep.com)**
-- CTRL + P             -> phpdoc
+- CTRL + D             -> phpdoc
 - CTRL + K             -> Launch php code sniffer
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
 - CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
 - F5 OR \be            -> Seeing buffer explorer
-- \s (symfony command) -> symfony1
-- :Symfony *command*   -> symfony1
 
-[pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [align]: http://www.vim.org/scripts/script.php?script_id=294
 [ack]: http://www.vim.org/scripts/script.php?script_id=2572
 [bufexplorer]: http://www.vim.org/scripts/script.php?script_id=42
 [ctrl-p]: https://github.com/kien/ctrlp.vim
 [check-syntax]: http://www.vim.org/scripts/script.php?script_id=1431
 [comment]: http://www.vim.org/scripts/script.php?script_id=1528
-[javascript]: http://www.vim.org/scripts/script.php?script_id=2083
 [jinja]: http://www.twig-project.org/doc/templates.html#ides-integration
 [keepcase]: https://github.com/vim-scripts/keepcase.vim
 [nerdtree]: http://www.vim.org/scripts/script.php?script_id=1658
