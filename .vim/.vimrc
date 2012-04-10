@@ -8,7 +8,36 @@ filetype on               " try to detect filetypes
 filetype plugin on        " enable loading indent file for filetype
 filetype indent on        " enable loading indent file for filetype
 
-call pathogen#runtime_append_all_bundles()
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'beyondwords/vim-twig'
+Bundle 'corntrace/bufexplorer'
+Bundle 'ervandew/supertab'
+Bundle 'hallison/vim-markdown'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/zencoding-vim'
+Bundle 'michaeljsmith/vim-indent-object'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'stephpy/vim-symfony'
+Bundle 'taq/vim-rspec'
+Bundle 'tomtom/checksyntax_vim'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tsaleh/vim-align'
+Bundle 'vim-scripts/Jinja'
+Bundle 'vim-scripts/comment.vim'
+Bundle 'vim-scripts/keepcase.vim'
+Bundle 'vim-scripts/phpcs.vim'
+Bundle 'vim-scripts/taglist.vim'
 
 " ===================================
 " Configuration
@@ -57,10 +86,6 @@ endif
 " ===================================
 " Bundles configuration
 " ===================================
-
-"The default leader is '\', but many people prefer ',' as it's in a standard
-"location
-let mapleader = ','
 
 let g:ragtag_global_maps = 1
 " Syntax coloration of twig files

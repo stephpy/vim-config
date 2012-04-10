@@ -53,3 +53,6 @@ echo "\033[0;32m"'   \_/ |__|__|_|  / '"\033[0m"
 echo "\033[0;32m"'                \/  '"\033[0m"
 
 echo "\n\n \033[0;32m....is now installed.\033[0m"
+echo "\n\n \033[0;32m....LAUNCH !\033[0m"
+
+vim +BundleInstall
