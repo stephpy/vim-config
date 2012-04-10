@@ -12,12 +12,15 @@ Inspired from https://github.com/spf13/spf13-vim.
     OR
 
     git clone git://github.com/stephpy/vim-config.git
+
+    # Be sure you backup your .vim (copy them by using cmd "cp ~/.vim ~/.vim.backup")
     ln -s vim-config/.vim ~/.vim
+    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
+    ln -s ~/.vimrc ~/.vimrc
+
     mkdir ~/.vim/bundle
     git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
-    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
-    ln -s ~/.vim/.vimrc ~/.vimrc
 
     vim +BundleInstall
 
