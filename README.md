@@ -1,6 +1,8 @@
 StephPY VIM config, py.stephane1(at)gmail.com - http://stephpy.github.com
 ==================================================================
 
+Inspired from https://github.com/spf13/spf13-vim.
+
 # Installation
 
     One Shot:
