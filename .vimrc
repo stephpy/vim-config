@@ -11,12 +11,14 @@ filetype indent on        " enable loading indent file for filetype
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+Bundle 'JDeuce/jinja-syntax'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'beyondwords/vim-twig'
 Bundle 'corntrace/bufexplorer'
 Bundle 'ervandew/supertab'
+Bundle 'gmarik/vundle'
 Bundle 'hallison/vim-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/zencoding-vim'
@@ -33,7 +35,6 @@ Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tsaleh/vim-align'
-Bundle 'vim-scripts/Jinja'
 Bundle 'vim-scripts/comment.vim'
 Bundle 'vim-scripts/keepcase.vim'
 Bundle 'vim-scripts/phpcs.vim'
