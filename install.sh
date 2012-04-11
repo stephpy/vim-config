@@ -38,7 +38,7 @@ echo "\033[0;34mCloning Vim config\033[0m"
 /usr/bin/env git clone git@github.com:stephpy/vim-config.git $HOME/vim-config
 
 ln -s $HOME/vim-config/.vim $HOME/.vim
-ln -s $HOME/.vimrc $HOME/.vimrc
+ln -s $HOME/vim-config/.vimrc $HOME/.vimrc
 
 echo "\033[0;34mInstalling vundle \033[0m"
 mkdir $HOME/.vim/bundle
