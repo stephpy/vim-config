@@ -24,6 +24,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'mattn/zencoding-vim'
+Bundle 'mileszs/ack.vim'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -77,46 +78,46 @@ set hidden
 "color
 colorscheme vividchalk
 
-"delete spaces at end of line
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufRead * silent! %s/[\r \t]\+$//
-autocmd BufEnter *.php :%s/[ \t\r]\+$//e
-autocmd BufEnter *.php :retab
-
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
 endif
 
 " ===================================
+" Autocommands
+" ===================================
+
+"delete spaces at end of line
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufRead * silent! %s/[\r \t]\+$//
+autocmd BufEnter *.php :%s/[ \t\r]\+$//e
+autocmd BufEnter *.php :retab
+au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
+autocmd FileType php map <C-K> :Phpcs<CR>
+
+" ===================================
 " Bundles configuration
 " ===================================
 
-let g:ragtag_global_maps = 1
-" Syntax coloration of twig files
-au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
-" php doc syntax
 source ~/.vim/php-doc.vim
 
+let g:ragtag_global_maps = 1
 let g:pdv_cfg_php4always=0 "using php5 doc tags
-
-" Project Tree
-" Disable netrw's autocmd, since we're ALWAYS using NERDTree
-runtime plugin/netRwPlugin.vim
-augroup FileExplorer
-  au!
-augroup END
-
 let g:NERDTreeHijackNetrw = 0
 let ctrlp_match_window_reversed=0
+let g:ctrlp_working_path_mode = 0
 
-set wildignore+=*/cache/*,*/logs/*,*.swp,*/.git/*
+" ignore for ctrlp these dir,files
+set wildignore+=*/cache/*,*/logs/*,*.swp
+set wildignore+=*/.git/*,*/.svn/*,
+set wildignore+=*.jpg,*.png,*.gif
+
+set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 
 " ===================================
 " Mapping
 " ===================================
 
-set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 nmap <leader>sl :SessionList<CR>
 nmap <leader>ss :SessionSave<CR>
 
@@ -131,11 +132,8 @@ inoremap <C-D> <ESC>:call PhpDocSingle()<CR>
 nnoremap <C-D> :call PhpDocSingle()<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
 
-" Code sniffer
-autocmd FileType php map <C-K> :Phpcs<CR>
-
 " Use local vimrc if available {
-    if filereadable(expand("~/.vimrc.local"))
-        source ~/.vimrc.local
-    endif
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
 " }
