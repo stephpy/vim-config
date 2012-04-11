@@ -42,6 +42,7 @@ Bundle 'vim-scripts/keepcase.vim'
 Bundle 'vim-scripts/phpcs.vim'
 Bundle 'vim-scripts/sessionman.vim'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'vim-scripts/tlib'
 
 " ===================================
 " Configuration
