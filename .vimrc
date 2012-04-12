@@ -103,7 +103,7 @@ source ~/.vim/php-doc.vim
 
 let g:ragtag_global_maps = 1
 let g:pdv_cfg_php4always=0 "using php5 doc tags
-let ctrlp_match_window_reversed=0
+let g:ctrlp_match_window_reversed=0
 let g:ctrlp_working_path_mode = 0
 
 " ignore for ctrlp these dir,files
