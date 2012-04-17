@@ -29,6 +29,7 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'stephpy/phpcs.vim'
+Bundle 'stephpy/vim-phpdoc'
 Bundle 'stephpy/vim-symfony'
 Bundle 'taq/vim-rspec'
 Bundle 'tomtom/checksyntax_vim'
@@ -98,8 +99,6 @@ autocmd FileType php map <C-K> :Phpcs<CR>
 " ===================================
 " Bundles configuration
 " ===================================
-
-source ~/.vim/php-doc.vim
 
 let g:ragtag_global_maps = 1
 let g:pdv_cfg_php4always=0 "using php5 doc tags
