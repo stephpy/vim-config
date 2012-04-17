@@ -126,8 +126,8 @@ map <C-f> :Ack
 " Insert current namespace and opens php and create empty class, based on the file name
 nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
-inoremap <C-D> <ESC>:call PhpDocSingle()<CR>
-nnoremap <C-D> :call PhpDocSingle()<CR>
+" This will align params by using align vim bundle
+nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/return<CR>kk\tsp<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
 
 " Use local vimrc if available {
