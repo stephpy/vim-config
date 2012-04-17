@@ -127,7 +127,7 @@ map <C-f> :Ack
 nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
 " This will align params by using align vim bundle
-nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/return<CR>kk\tsp<CR>
+nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
 
 " Use local vimrc if available {
