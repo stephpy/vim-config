@@ -69,10 +69,6 @@ Plugin list:
 - [vundle][vundle]                             => Manage bundles
 - [zencoding-vim][zencoding-vim]               => Zencoding for vim
 
-Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'stephpy/phpqa'
-
 # Useful configs
     let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
     let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
