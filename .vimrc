@@ -142,7 +142,7 @@ if !exists("g:file_exporer_at_startup")
     let g:NERDTreeHijackNetrw=0
 
     " use 'vim' in your directory and it'll open a nerdtree automatically
-    autocmd vimenter * if !argc() | NERDTree | endif
+    autocmd vimenter * if !argc() || argv() == ['.'] | NERDTree | endif
 
     " Disable netrw's autocmd, since we're ALWAYS using NERDTree
     runtime plugin/netRwPlugin.vim
