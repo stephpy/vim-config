@@ -25,10 +25,18 @@ Bundle 'hallison/vim-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'mileszs/ack.vim'
+
+if executable('ack')
+    Bundle 'mileszs/ack.vim'
+endif
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'stephpy/phpcs.vim'
+
+if executable('phpcs')
+    Bundle 'stephpy/phpcs.vim'
+endif
+
 Bundle 'stephpy/vim-phpdoc'
 Bundle 'stephpy/vim-symfony'
 Bundle 'taq/vim-rspec'
@@ -43,7 +51,11 @@ Bundle 'tsaleh/vim-align'
 Bundle 'vim-scripts/comment.vim'
 Bundle 'vim-scripts/keepcase.vim'
 Bundle 'vim-scripts/sessionman.vim'
-Bundle 'vim-scripts/taglist.vim'
+
+if executable('ctags')
+    Bundle 'vim-scripts/taglist.vim'
+endif
+
 Bundle 'vim-scripts/tlib'
 
 " ===================================
