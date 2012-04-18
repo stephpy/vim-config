@@ -102,7 +102,8 @@ autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter *.php :%s/[ \t\r]\+$//e
 autocmd BufEnter *.php :retab
 au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
-autocmd FileType php map <C-K> :Phpcs<CR>
+" Run php code sniffer and php mess detector
+autocmd FileType php map <C-K> :call phpqa#PhpQaTools(1,1)<CR>
 
 " ===================================
 " Bundles configuration
