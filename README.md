@@ -32,6 +32,8 @@ Using vundlep lugin (to set unobstrusive plugins)
 
 Plugin list:
 
+- [Auto-Pairs][Auto-Pairs]                     => Close [{('""')}]
+- [HTML-AutoCloseTag][HTML-AutoCloseTag]       => Auto close html tags
 - [ack.vim][ack.vim]                           => Searching on project, this need ackbetterthangrep
 - [bufexplorer][bufexplorer]                   => Buffer explorer
 - [checksyntax_vim][checksyntax_vim]           => Plugin which check automatically syntax of files (works for php and some other languages)
@@ -40,7 +42,7 @@ Plugin list:
 - [jinja-syntax][jinja-syntax]                 => Jinja/Twig Syntax highliting
 - [keepcase.vim][keepcase.vim]                 => case tool
 - [nerdtree][nerdtree]                         => File navigation
-- [phpcs.vim][phpcs.vim]                       => php code sniffer implemented on vim
+- [phpqa][phpqa]                               => Php Quality check
 - [sessionman.vim][sessionman.vim]             => Save session, use old session, etc ...
 - [supertab][supertab]                         => Some function for <tab>
 - [syntastic][syntastic]                       => Syntastic is a syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user
@@ -67,6 +69,10 @@ Plugin list:
 - [vundle][vundle]                             => Manage bundles
 - [zencoding-vim][zencoding-vim]               => Zencoding for vim
 
+Bundle 'vim-scripts/Auto-Pairs'
+Bundle 'vim-scripts/HTML-AutoCloseTag'
+Bundle 'stephpy/phpqa'
+
 # Useful configs
     let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
     let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
@@ -86,37 +92,40 @@ Shortcuts:
 - CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
 - F5 OR \be            -> Seeing buffer explorer
 
-[jinja-syntax]: https://github.com/JDeuce/jinja-syntax
-[vim-easymotion]: https://github.com/Lokaltog/vim-easymotion
-[vim-powerline]: https://github.com/Lokaltog/vim-powerline
-[vim-addon-mw-utils]: https://github.com/MarcWeber/vim-addon-mw-utils
-[vim-colors-solarized]: https://github.com/altercation/vim-colors-solarized
-[vim-twig]: https://github.com/beyondwords/vim-twig
-[bufexplorer]: https://github.com/corntrace/bufexplorer
-[supertab]: https://github.com/ervandew/supertab
-[vim-snipmate]: https://github.com/garbas/vim-snipmate
-[vundle]: https://github.com/gmarik/vundle
-[vim-markdown]: https://github.com/hallison/vim-markdown
-[ctrlp.vim]: https://github.com/kien/ctrlp.vim
-[zencoding-vim]: https://github.com/mattn/zencoding-vim
-[vim-indent-object]: https://github.com/michaeljsmith/vim-indent-object
+[Auto-Pairs]: https://github.com/vim-scripts/Auto-Pairs
+[HTML-AutoCloseTag]: https://github.com/vim-scripts/HTML-AutoCloseTag
 [ack.vim]: https://github.com/mileszs/ack.vim
-[nerdtree]: https://github.com/scrooloose/nerdtree
-[syntastic]: https://github.com/scrooloose/syntastic
-[phpcs.vim]: https://github.com/stephpy/phpcs.vim
-[vim-phpdoc]: https://github.com/stephpy/vim-phpdoc
-[vim-symfony]: https://github.com/stephpy/vim-symfony
-[vim-rspec]: https://github.com/taq/vim-rspec
+[bufexplorer]: https://github.com/corntrace/bufexplorer
 [checksyntax_vim]: https://github.com/tomtom/checksyntax_vim
-[vim-abolish]: https://github.com/tpope/vim-abolish
-[vim-cucumber]: https://github.com/tpope/vim-cucumber
-[vim-fugitive]: https://github.com/tpope/vim-fugitive
-[vim-ragtag]: https://github.com/tpope/vim-ragtag
-[vim-surround]: https://github.com/tpope/vim-surround
-[vim-unimpaired]: https://github.com/tpope/vim-unimpaired
-[vim-align]: https://github.com/tsaleh/vim-align
 [comment.vim]: https://github.com/vim-scripts/comment.vim
+[ctrlp.vim]: https://github.com/kien/ctrlp.vim
+[jinja-syntax]: https://github.com/JDeuce/jinja-syntax
 [keepcase.vim]: https://github.com/vim-scripts/keepcase.vim
+[nerdtree]: https://github.com/scrooloose/nerdtree
+[phpcs.vim]: https://github.com/stephpy/phpcs.vim
+[phpqa]: https://github.com/stephpy/phpqa
 [sessionman.vim]: https://github.com/vim-scripts/sessionman.vim
+[supertab]: https://github.com/ervandew/supertab
+[syntastic]: https://github.com/scrooloose/syntastic
 [taglist.vim]: https://github.com/vim-scripts/taglist.vim
 [tlib]: https://github.com/vim-scripts/tlib
+[vim-abolish]: https://github.com/tpope/vim-abolish
+[vim-addon-mw-utils]: https://github.com/MarcWeber/vim-addon-mw-utils
+[vim-align]: https://github.com/tsaleh/vim-align
+[vim-colors-solarized]: https://github.com/altercation/vim-colors-solarized
+[vim-cucumber]: https://github.com/tpope/vim-cucumber
+[vim-easymotion]: https://github.com/Lokaltog/vim-easymotion
+[vim-fugitive]: https://github.com/tpope/vim-fugitive
+[vim-indent-object]: https://github.com/michaeljsmith/vim-indent-object
+[vim-markdown]: https://github.com/hallison/vim-markdown
+[vim-phpdoc]: https://github.com/stephpy/vim-phpdoc
+[vim-powerline]: https://github.com/Lokaltog/vim-powerline
+[vim-ragtag]: https://github.com/tpope/vim-ragtag
+[vim-rspec]: https://github.com/taq/vim-rspec
+[vim-snipmate]: https://github.com/garbas/vim-snipmate
+[vim-surround]: https://github.com/tpope/vim-surround
+[vim-symfony]: https://github.com/stephpy/vim-symfony
+[vim-twig]: https://github.com/beyondwords/vim-twig
+[vim-unimpaired]: https://github.com/tpope/vim-unimpaired
+[vundle]: https://github.com/gmarik/vundle
+[zencoding-vim]: https://github.com/mattn/zencoding-vim
