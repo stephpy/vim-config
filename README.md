@@ -42,7 +42,7 @@ Plugin list:
 - [jinja-syntax][jinja-syntax]                 => Jinja/Twig Syntax highliting
 - [keepcase.vim][keepcase.vim]                 => case tool
 - [nerdtree][nerdtree]                         => File navigation
-- [phpqa][phpqa]                               => Php Quality check
+- [phpqa][phpqa]                               => Php Quality check, Need +signs compilation of vim
 - [sessionman.vim][sessionman.vim]             => Save session, use old session, etc ...
 - [supertab][supertab]                         => Some function for <tab>
 - [syntastic][syntastic]                       => Syntastic is a syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user
