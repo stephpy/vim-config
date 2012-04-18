@@ -136,6 +136,21 @@ let g:phpqa_codesniffer_autorun = 0
 " Define by default all rulesets (given in vim-config)
 let g:phpqa_messdetector_ruleset = "~/.vim/vendor/phpmd_rulesets.xml"
 
+" you can override it if you want a fileexplorer
+" by default when opening vim on dir
+if !exists("g:file_exporer_at_startup")
+    let g:NERDTreeHijackNetrw=0
+
+    " use 'vim' in your directory and it'll open a nerdtree automatically
+    autocmd vimenter * if !argc() | NERDTree | endif
+
+    " Disable netrw's autocmd, since we're ALWAYS using NERDTree
+    runtime plugin/netRwPlugin.vim
+    augroup FileExplorer
+      au!
+    augroup END
+endif
+
 " ===================================
 " Mapping
 " ===================================
