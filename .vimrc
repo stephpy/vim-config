@@ -33,11 +33,10 @@ endif
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 
-if has('signs')
-    Bundle 'stephpy/phpqa'
-endif
-
 Bundle 'stephpy/vim-phpdoc'
+if has('signs')
+    Bundle 'stephpy/vim-phpqa'
+endif
 Bundle 'stephpy/vim-symfony'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'taq/vim-rspec'
