@@ -21,14 +21,13 @@ Inspired from https://github.com/spf13/spf13-vim.
     mkdir ~/.vim/bundle
     git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
-
     vim +BundleInstall
 
 # Override
 
 Define a ~/.vimrc.local and set your config on (or bundles)
 
-Using vundlep lugin (to set unobstrusive plugins)
+Using vundle plugin (to set unobstrusive plugins)
 
 Plugin list:
 
@@ -56,6 +55,7 @@ Plugin list:
 - [vim-easymotion][vim-easymotion]             => Use easymotions on VIM
 - [vim-fugitive][vim-fugitive]                 => Git tools
 - [vim-indent-object][vim-indent-object]       => Text Objects based on Indentation Level
+- [vim-instant-markdown]                      => Render your .markdown files on a browser
 - [vim-markdown][vundle]                       => Markdown tools
 - [vim-phpdoc][vim-phpdoc]                     => PHPDoc for classes, methods, vars, php5.3 compliant
 - [vim-powerline][vim-powerline]               => Vim beautiful !
@@ -113,6 +113,7 @@ Shortcuts:
 [vim-easymotion]: https://github.com/Lokaltog/vim-easymotion
 [vim-fugitive]: https://github.com/tpope/vim-fugitive
 [vim-indent-object]: https://github.com/michaeljsmith/vim-indent-object
+[vim-instant-markdown]: https://github.com/suan/vim-instant-markdown
 [vim-markdown]: https://github.com/hallison/vim-markdown
 [vim-phpdoc]: https://github.com/stephpy/vim-phpdoc
 [vim-powerline]: https://github.com/Lokaltog/vim-powerline

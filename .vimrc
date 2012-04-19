@@ -39,6 +39,7 @@ endif
 
 Bundle 'stephpy/vim-phpdoc'
 Bundle 'stephpy/vim-symfony'
+Bundle 'suan/vim-instant-markdown'
 Bundle 'taq/vim-rspec'
 Bundle 'tomtom/checksyntax_vim'
 Bundle 'tpope/vim-abolish'
