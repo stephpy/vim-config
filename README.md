@@ -55,7 +55,7 @@ Plugin list:
 - [vim-easymotion][vim-easymotion]             => Use easymotions on VIM
 - [vim-fugitive][vim-fugitive]                 => Git tools
 - [vim-indent-object][vim-indent-object]       => Text Objects based on Indentation Level
-- [vim-instant-markdown]                      => Render your .markdown files on a browser
+- [vim-instant-markdown]                       => Render your .markdown files on a browser, need node.js and a node.js plugin to work
 - [vim-markdown][vundle]                       => Markdown tools
 - [vim-phpdoc][vim-phpdoc]                     => PHPDoc for classes, methods, vars, php5.3 compliant
 - [vim-powerline][vim-powerline]               => Vim beautiful !
@@ -70,8 +70,8 @@ Plugin list:
 - [zencoding-vim][zencoding-vim]               => Zencoding for vim
 
 # Useful configs
-    let g:pdv_cfg_Author="Stephane PY <py.stephane1(at)gmail.com>" " change the authorname for phpdoc
-    let g:NERDTreeShowHidden=1                                     " show hidden files on nerdtree
+    let g:pdv_cfg_Author="Stephane PY <py.stephane1@gmail.com>"
+    let g:NERDTreeShowHidden=1                                " show hidden files on nerdtree
 
     coloscheme symfony
 
