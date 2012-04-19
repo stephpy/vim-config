@@ -120,6 +120,8 @@ let g:pdv_cfg_php4always=0 "using php5 doc tags
 let g:ctrlp_match_window_reversed=0
 let g:ctrlp_working_path_mode = 0
 
+let g:symfony_enable_shell_mapping = 1
+
 " ignore for ctrlp these dir,files
 set wildignore+=*/cache/*,*/logs/*,*.swp
 set wildignore+=*/.git/*,*/.svn/*,
