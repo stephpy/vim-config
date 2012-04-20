@@ -31,43 +31,159 @@ Using vundle plugin (to set unobstrusive plugins)
 
 Plugin list:
 
-- [Auto-Pairs][Auto-Pairs]                     => Close [{('""')}]
-- [HTML-AutoCloseTag][HTML-AutoCloseTag]       => Auto close html tags
-- [ack.vim][ack.vim]                           => Searching on project, this need ackbetterthangrep
-- [bufexplorer][bufexplorer]                   => Buffer explorer
-- [checksyntax_vim][checksyntax_vim]           => Plugin which check automatically syntax of files (works for php and some other languages)
-- [comment.vim][comment.vim]                   => Comment code
-- [ctrlp.vim][ctrlp.vim]                       => As on textmate, searching on project a file and open it
-- [jinja-syntax][jinja-syntax]                 => Jinja/Twig Syntax highliting
-- [keepcase.vim][keepcase.vim]                 => case tool
-- [nerdtree][nerdtree]                         => File navigation
-- [phpqa][phpqa]                               => Php Quality check, Need +signs compilation of vim
-- [sessionman.vim][sessionman.vim]             => Save session, use old session, etc ...
-- [supertab][supertab]                         => Some function for <tab>
-- [syntastic][syntastic]                       => Syntastic is a syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user
-- [taglist.vim][taglist.vim]                   => Show methods, properties of a class
-- [tlib][tlib]                                 => This library provides some utility functions
-- [vim-abolish][vim-abolish]                   => Awesome replace
-- [vim-addon-mw-utils][vim-addon-mw-utils]     => Some utils
-- [vim-align][vim-align]                       => Alignments
-- [vim-colors-solarized][vim-colors-solarized] => Color theme
-- [vim-cucumber][vim-cucumber]                 => Syntax highlighting
-- [vim-easymotion][vim-easymotion]             => Use easymotions on VIM
-- [vim-fugitive][vim-fugitive]                 => Git tools
-- [vim-indent-object][vim-indent-object]       => Text Objects based on Indentation Level
-- [vim-instant-markdown]                       => Render your .markdown files on a browser, need node.js and a node.js plugin to work
-- [vim-markdown][vundle]                       => Markdown tools
-- [vim-phpdoc][vim-phpdoc]                     => PHPDoc for classes, methods, vars, php5.3 compliant
-- [vim-powerline][vim-powerline]               => Vim beautiful !
-- [vim-ragtag][vim-ragtag]                     => html tips
-- [vim-rspec][vim-rspec]                       => Enable the use of the spec command inside Vim
-- [vim-snipmate][vim-snipmate]                 => As on textmate, easily add shortcut to create snippets
-- [vim-surround][vim-surround]                 => Delete/change/add parentheses/quotes/XML-tags/much more with ease
-- [vim-symfony][vim-symfony]                   => Shortcuts for Symfony2
-- [vim-twig][vim-twig]                         => Twig syntax
-- [vim-unimpaired][vim-unimpaired]             => Pairs of handy bracket mappings
-- [vundle][vundle]                             => Manage bundles
-- [zencoding-vim][zencoding-vim]               => Zencoding for vim
+<table style="width: 100%">
+    <tr>
+        <th>Nom</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/Auto-pairs">Auto-Pairs</a></td>
+        <td>Close ``[{('""')}]``</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/HTML-AutoCloseTag">HTML-AutoCloseTag</a></td>
+        <td>Auto close html tags</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/mileszs/ack.vim">ack.vim</a></td>
+        <td>Searching on project, this need ackbetterthangrep</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/corntrace/bufexplorer">bufexplorer</a></td>
+        <td>Buffer explorer</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tomtom/checksyntax_vim">checksyntax_vim</a></td>
+        <td>Plugin which check automatically syntax of files (works for php and some other languages)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/comments.vim">comments.vim</a></td>
+        <td>Comments code</td></tr>
+    <tr>
+        <td><a href="https://github.com/kien/ctrlp.vim">ctrlp.vim</a></td>
+        <td>As on textmate, searching on project a file and open it</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/JDeuce/jinja-syntax">jinja-syntax</a></td>
+        <td>Jinja/Twig Syntax highliting</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/keepcase.vim">keepcase.vim</a></td>
+        <td>case tool</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/scrooloose/nerdtree">nerdtree</a></td>
+        <td>File navigation</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/stephpy/phpqa">phpqa</a></td>
+        <td>Php Quality check, Need +signs compilation of vim</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/sessionman.vim">sessionman.vim</a></td>
+        <td>Save session, use old session, etc ...</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ervandew/supertab">supertab</a></td>
+        <td>Some function for <tab></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/scrooloose/syntastic">syntastic</a></td>
+        <td>Syntastic is a syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/taglist.vim">taglist.vim</a></td>
+        <td>Show methods, properties of a class</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/tlib">tlib</a></td>
+        <td>This library provides some utility functions</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tpope/vim-abolish">vim-abolish</a></td>
+        <td>Awesome replace</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/MarcWeber/vim-addon-mw-utils">vim-addon-mw-utils</a></td>
+        <td>Some utils</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tsaleh/vim-align">vim-align</a></td>
+        <td>Alignments</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/altercation/vim-colors-solarized">vim-colors-solarized</a></td>
+        <td>Color theme</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tpope/vim-cucumber">vim-cucumber</a></td>
+        <td>Syntax highlighting</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Lokaltog/vim-easymotion">vim-easymotion</a></td>
+        <td>Use easymotions on VIM</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></td>
+        <td>Git tools</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/michaeljsmith/vim-indent-object">vim-indent-object</a></td>
+        <td>Text Objects based on Indentation Level</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/suan/vim-instant-markdown">vim-instant-markdown</a></td>
+        <td>Render your .markdown files on a browser, need node.js and a node.js plugin to work</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/hallison/vim-markdown">vim-markdown</a></td>
+        <td>Markdown tools</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/stephpy/vim-phpdoc">vim-phpdoc</a></td>
+        <td>PHPDoc for classes, methods, vars, php5.3 compliant</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Lokaltog/vim-powerline">vim-powerline</a></td>
+        <td>Vim beautiful !</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tpope/vim-ragtag">vim-ragtag</a></td>
+        <td>html tips</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/taq/vim-rspec">vim-rspec</a></td>
+        <td>Enable the use of the spec command inside Vim</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/garbas/vim-snipmate">vim-snipmate</a></td>
+        <td>As on textmate, easily add shortcut to create snippets</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tpope/vim-surround">vim-surround</a></td>
+        <td>Delete/change/add parentheses/quotes/XML-tags/much more with ease</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/stephpy/vim-symfony">vim-symfony</a></td>
+        <td>Shortcuts for Symfony2</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/beyondwords/vim-twig">vim-twig</a></td>
+        <td>Twig syntax</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tpope/vim-unimpaired">vim-unimpaired</a></td>
+        <td>Pairs of handy bracket mappings</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/gmarik/vundle">vundle</a></td>
+        <td>Manage bundles</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/mattn/zencoding-vim">zencoding-vim</a></td>
+        <td>Zencoding for vim</td>
+    </tr>
+</table>
 
 # Useful configs
     let g:pdv_cfg_Author="Stephane PY <py.stephane1@gmail.com>"
@@ -87,42 +203,3 @@ Shortcuts:
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
 - CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
 - F5 OR \be            -> Seeing buffer explorer
-
-[Auto-Pairs]: https://github.com/vim-scripts/Auto-Pairs
-[HTML-AutoCloseTag]: https://github.com/vim-scripts/HTML-AutoCloseTag
-[ack.vim]: https://github.com/mileszs/ack.vim
-[bufexplorer]: https://github.com/corntrace/bufexplorer
-[checksyntax_vim]: https://github.com/tomtom/checksyntax_vim
-[comment.vim]: https://github.com/vim-scripts/comment.vim
-[ctrlp.vim]: https://github.com/kien/ctrlp.vim
-[jinja-syntax]: https://github.com/JDeuce/jinja-syntax
-[keepcase.vim]: https://github.com/vim-scripts/keepcase.vim
-[nerdtree]: https://github.com/scrooloose/nerdtree
-[phpcs.vim]: https://github.com/stephpy/phpcs.vim
-[phpqa]: https://github.com/stephpy/phpqa
-[sessionman.vim]: https://github.com/vim-scripts/sessionman.vim
-[supertab]: https://github.com/ervandew/supertab
-[syntastic]: https://github.com/scrooloose/syntastic
-[taglist.vim]: https://github.com/vim-scripts/taglist.vim
-[tlib]: https://github.com/vim-scripts/tlib
-[vim-abolish]: https://github.com/tpope/vim-abolish
-[vim-addon-mw-utils]: https://github.com/MarcWeber/vim-addon-mw-utils
-[vim-align]: https://github.com/tsaleh/vim-align
-[vim-colors-solarized]: https://github.com/altercation/vim-colors-solarized
-[vim-cucumber]: https://github.com/tpope/vim-cucumber
-[vim-easymotion]: https://github.com/Lokaltog/vim-easymotion
-[vim-fugitive]: https://github.com/tpope/vim-fugitive
-[vim-indent-object]: https://github.com/michaeljsmith/vim-indent-object
-[vim-instant-markdown]: https://github.com/suan/vim-instant-markdown
-[vim-markdown]: https://github.com/hallison/vim-markdown
-[vim-phpdoc]: https://github.com/stephpy/vim-phpdoc
-[vim-powerline]: https://github.com/Lokaltog/vim-powerline
-[vim-ragtag]: https://github.com/tpope/vim-ragtag
-[vim-rspec]: https://github.com/taq/vim-rspec
-[vim-snipmate]: https://github.com/garbas/vim-snipmate
-[vim-surround]: https://github.com/tpope/vim-surround
-[vim-symfony]: https://github.com/stephpy/vim-symfony
-[vim-twig]: https://github.com/beyondwords/vim-twig
-[vim-unimpaired]: https://github.com/tpope/vim-unimpaired
-[vundle]: https://github.com/gmarik/vundle
-[zencoding-vim]: https://github.com/mattn/zencoding-vim
