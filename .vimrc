@@ -122,10 +122,7 @@ let g:ctrlp_working_path_mode = 0
 
 let g:symfony_enable_shell_mapping = 1
 
-" ignore for ctrlp these dir,files
-set wildignore+=*/cache/*,*/logs/*,*.swp
-set wildignore+=*/.git/*,*/.svn/*,
-set wildignore+=*.jpg,*.png,*.gif
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 
