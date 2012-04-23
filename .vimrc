@@ -122,7 +122,10 @@ let g:ctrlp_working_path_mode = 0
 
 let g:symfony_enable_shell_mapping = 1
 
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|cache$\|log$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$\|\.jpg$\|\.gif$\|\.png$',
+  \ }
 
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 
