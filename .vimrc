@@ -157,6 +157,8 @@ endif
 " Mapping
 " ===================================
 
+nmap <Space> <PageDown>
+
 nmap <leader>sl :SessionList<CR>
 nmap <leader>ss :SessionSave<CR>
 
