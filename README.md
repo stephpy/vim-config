@@ -189,7 +189,7 @@ Plugin list:
     let g:pdv_cfg_Author="Stephane PY <py.stephane1@gmail.com>"
     let g:NERDTreeShowHidden=1                                " show hidden files on nerdtree
 
-    coloscheme symfony
+    colorscheme symfony
 
 Shortcuts:
 
