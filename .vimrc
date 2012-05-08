@@ -22,7 +22,13 @@ Bundle 'ervandew/supertab'
 Bundle 'garbas/vim-snipmate'
 Bundle 'gmarik/vundle'
 Bundle 'hallison/vim-markdown'
-Bundle 'kien/ctrlp.vim'
+
+if has('ruby')
+    Bundle 'wincent/Command-T'
+else
+    Bundle 'kien/ctrlp.vim'
+endif
+
 Bundle 'mattn/zencoding-vim'
 Bundle 'michaeljsmith/vim-indent-object'
 
@@ -117,15 +123,25 @@ autocmd FileType php map <C-K> :call phpqa#PhpQaTools(1,1)<CR>
 
 let g:ragtag_global_maps = 1
 let g:pdv_cfg_php4always=0 "using php5 doc tags
-let g:ctrlp_match_window_reversed=0
-let g:ctrlp_working_path_mode = 0
+
+if has('ruby')
+    nnoremap <silent> <C-P> :CommandT<CR>
+
+    let g:CommandTMaxFiles=20000
+    let g:CommandTAlwaysShowDotFiles=1
+else
+    let g:ctrlp_match_window_reversed=0
+    let g:ctrlp_working_path_mode = 0
+
+    let g:ctrlp_custom_ignore = {
+                \ 'dir':  '\.git$\|\.hg$\|\.svn$\|cache$\|log$',
+                \ 'file': '\.exe$\|\.so$\|\.dll$\|\.jpg$\|\.gif$\|\.png$',
+                \ }
+endif
 
 let g:symfony_enable_shell_mapping = 1
 
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|cache$\|log$',
-  \ 'file': '\.exe$\|\.so$\|\.dll$\|\.jpg$\|\.gif$\|\.png$',
-  \ }
+
 
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 

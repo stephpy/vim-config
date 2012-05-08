@@ -60,8 +60,12 @@ Plugin list:
         <td><a href="https://github.com/vim-scripts/comments.vim">comments.vim</a></td>
         <td>Comments code</td></tr>
     <tr>
+        <td><a href="https://github.com/wincent/Command-T">Command-T</a></td>
+        <td>(ONLY IF VIM is compiled with ruby) As on textmate, searching on project a file and open it</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/kien/ctrlp.vim">ctrlp.vim</a></td>
-        <td>As on textmate, searching on project a file and open it</td>
+        <td>(ONLY IF VIM is NOT compiled with ruby) As on textmate, searching on project a file and open it</td>
     </tr>
     <tr>
         <td><a href="https://github.com/JDeuce/jinja-syntax">jinja-syntax</a></td>
@@ -185,21 +189,25 @@ Plugin list:
     </tr>
 </table>
 
+# Trouble-shooting
+
+If command-t does not work, see "Trouble-shooting" section on https://github.com/wincent/Command-T
+
 # Useful configs
     let g:pdv_cfg_Author="Stephane PY <py.stephane1@gmail.com>"
     let g:NERDTreeShowHidden=1                                " show hidden files on nerdtree
 
-    coloscheme symfony
+    coloscheme molokai
 
 Shortcuts:
 
 - CTRL + C             -> to comment line(s) selected
 - CTRL + X             -> to uncomment line(s) selected
-- CTRL + P             -> CTRL-P
+- CTRL + P             -> Command-T OR CTRL-P
 - CTRL + Y             -> Open NerdTree navigation
 - CTRL + F             -> Ack (search on project) **Need ack (betterthangrep.com)**
-- CTRL + D             -> phpdoc
-- CTRL + K             -> Launch php code sniffer
+- CTRL + D             -> phpdoc on class, methods, vars ...
+- CTRL + K             -> Launch php code sniffer + phpmd
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
 - CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
-- F5 OR \be            -> Seeing buffer explorer
+- <leader>be           -> Seeing buffer explorer
