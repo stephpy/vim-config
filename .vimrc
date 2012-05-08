@@ -43,6 +43,7 @@ Bundle 'stephpy/vim-phpdoc'
 if has('signs')
     Bundle 'stephpy/vim-phpqa'
 endif
+
 Bundle 'stephpy/vim-symfony'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'taq/vim-rspec'
@@ -140,8 +141,6 @@ else
 endif
 
 let g:symfony_enable_shell_mapping = 1
-
-
 
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 
