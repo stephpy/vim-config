@@ -5,23 +5,27 @@ Inspired from https://github.com/spf13/spf13-vim.
 
 # Installation
 
-    One Shot:
+One Shot:
 
-    wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
+```bash
+wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
+```
 
-    OR
+OR
 
-    git clone git://github.com/stephpy/vim-config.git
+```bash
+git clone git://github.com/stephpy/vim-config.git
 
-    # Be sure you backup your .vim (copy them by using cmd "cp ~/.vim ~/.vim.backup")
-    ln -s vim-config/.vim ~/.vim
-    # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
-    ln -s ~/.vimrc ~/.vimrc
+# Be sure you backup your .vim (copy them by using cmd "cp ~/.vim ~/.vim.backup")
+ln -s vim-config/.vim ~/.vim
+# Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
+ln -s ~/.vimrc ~/.vimrc
 
-    mkdir ~/.vim/bundle
-    git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+mkdir ~/.vim/bundle
+git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
-    vim +BundleInstall
+vim +BundleInstall
+```
 
 # Override
 
@@ -194,10 +198,13 @@ Plugin list:
 If command-t does not work, see "Trouble-shooting" section on https://github.com/wincent/Command-T
 
 # Useful configs
-    let g:pdv_cfg_Author="Stephane PY <py.stephane1@gmail.com>"
-    let g:NERDTreeShowHidden=1                                " show hidden files on nerdtree
 
-    coloscheme molokai
+```viml
+let g:pdv_cfg_Author="Stephane PY <py.stephane1@gmail.com>"
+let g:NERDTreeShowHidden=1                                " show hidden files on nerdtree
+
+colorscheme molokai
+```
 
 Shortcuts:
 
