@@ -54,4 +54,13 @@ echo "\033[0;32m"'                \/  '"\033[0m"
 echo "\n\n \033[0;32m....is now installed.\033[0m"
 echo "\n\n \033[0;32m....LAUNCH !\033[0m"
 
-vim +BundleInstall
+vim +BundleInstall +qa
+
+result= vim --version | grep +ruby
+if [ $result ]
+then
+    echo "\n\n \033[0;32m Configure COMMAND-T !\033[0m"
+    cd $HOME/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make
+fi
+
+echo "\n\n \033[0;32m....D O N E....!\033[0m"
