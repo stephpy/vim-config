@@ -24,7 +24,10 @@ ln -s ~/.vimrc ~/.vimrc
 mkdir ~/.vim/bundle
 git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
-vim +BundleInstall
+vim +BundleInstall +qa
+
+# If your vim is compiled with ruby:
+cd $HOME/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 ```
 
 # Override
