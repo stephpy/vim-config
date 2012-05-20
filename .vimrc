@@ -44,6 +44,8 @@ if has('signs')
     Bundle 'stephpy/vim-phpqa'
 endif
 
+Bundle 'stephpy/vim-php-cs-fixer'
+
 Bundle 'stephpy/vim-symfony'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'taq/vim-rspec'
