@@ -45,11 +45,10 @@ if has('signs')
 endif
 
 Bundle 'stephpy/vim-php-cs-fixer'
-
 Bundle 'stephpy/vim-symfony'
+Bundle 'stephpy/snipmate-snippets'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'taq/vim-rspec'
-Bundle 'tomtom/checksyntax_vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-fugitive'
@@ -154,6 +153,9 @@ let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
 " Define by default all rulesets (given in vim-config)
 let g:phpqa_messdetector_ruleset = "~/.vim/vendor/phpmd_rulesets.xml"
+
+" Dont' use autocmd of phpqa"
+let g:phpqa_enable_autocmd = 0
 
 " you can override it if you want a fileexplorer
 " by default when opening vim on dir

@@ -60,10 +60,6 @@ Plugin list:
         <td>Buffer explorer</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/tomtom/checksyntax_vim">checksyntax_vim</a></td>
-        <td>Plugin which check automatically syntax of files (works for php and some other languages)</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/vim-scripts/comments.vim">comments.vim</a></td>
         <td>Comments code</td></tr>
     <tr>
