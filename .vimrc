@@ -140,9 +140,6 @@ map <C-y> :NERDTreeToggle<CR>
 map <C-i> :TlistToggle<CR>
 map <C-f> :Ack
 
-" Insert current namespace and opens php and create empty class, based on the file name
-nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
-
 " This will align params by using align vim bundle
 nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
