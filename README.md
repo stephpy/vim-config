@@ -1,7 +1,5 @@
-StephPY VIM config, py.stephane1(at)gmail.com - http://stephpy.github.com
-==================================================================
-
-Inspired from https://github.com/spf13/spf13-vim.
+StephPY VIM config
+==================
 
 # Installation
 
@@ -32,7 +30,11 @@ cd $HOME/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
 # Override
 
+## Properties
+
 Define a `~/.vimrc.local` and set your config on (or bundles)
+
+## Bundles
 
 If you want to change the list of bundle, list them on `~/.vimrc.bundle`. you can add just some bundle by adding them on `~/.vimrc.local`
 
