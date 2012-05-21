@@ -54,10 +54,6 @@ Plugin list:
         <td>Close ``[{('""')}]``</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/vim-scripts/HTML-AutoCloseTag">HTML-AutoCloseTag</a></td>
-        <td>Auto close html tags</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/mileszs/ack.vim">ack.vim</a></td>
         <td>Searching on project, this need ackbetterthangrep</td>
     </tr>

@@ -37,7 +37,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-align'
 Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'vim-scripts/comments.vim'
-Bundle 'vim-scripts/HTML-AutoCloseTag'
 Bundle 'vim-scripts/sessionman.vim'
 
 if executable('ctags')
