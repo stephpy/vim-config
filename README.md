@@ -38,6 +38,8 @@ Define a `~/.vimrc.local` and set your config on (or bundles)
 
 If you want to change the list of bundle, list them on `~/.vimrc.bundle`. you can add just some bundle by adding them on `~/.vimrc.local`
 
+-------------------------------------------------
+
 Using vundle plugin (to set unobstrusive plugins)
 
 Plugin list:
