@@ -55,6 +55,8 @@ if has('mouse')
   set mouse=a
 endif
 
+" phpunit compilation
+com! -nargs=* Phpunit make -c app <q-args> | cw
 
 " ===================================
 " Autocommands
@@ -139,6 +141,7 @@ nmap <leader>ss :SessionSave<CR>
 map <C-y> :NERDTreeToggle<CR>
 map <C-i> :TlistToggle<CR>
 map <C-f> :Ack
+map <leader>te :Phpunit %<CR>
 
 " This will align params by using align vim bundle
 nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
