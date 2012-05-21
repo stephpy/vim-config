@@ -11,62 +11,11 @@ filetype indent on        " enable loading indent file for filetype
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-Bundle 'JDeuce/jinja-syntax'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'beyondwords/vim-twig'
-Bundle 'corntrace/bufexplorer'
-Bundle 'ervandew/supertab'
-Bundle 'garbas/vim-snipmate'
-Bundle 'gmarik/vundle'
-Bundle 'hallison/vim-markdown'
-
-if has('ruby')
-    Bundle 'wincent/Command-T'
+if filereadable(expand("~/.vimrc.bundle"))
+    source ~/.vimrc.bundle
 else
-    Bundle 'kien/ctrlp.vim'
+    source ~/.vim/vimrc.bundle
 endif
-
-Bundle 'mattn/zencoding-vim'
-Bundle 'michaeljsmith/vim-indent-object'
-
-if executable('ack')
-    Bundle 'mileszs/ack.vim'
-endif
-
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-
-Bundle 'stephpy/vim-phpdoc'
-if has('signs')
-    Bundle 'stephpy/vim-phpqa'
-endif
-
-Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'stephpy/vim-symfony'
-Bundle 'stephpy/snipmate-snippets'
-Bundle 'suan/vim-instant-markdown'
-Bundle 'taq/vim-rspec'
-Bundle 'tpope/vim-abolish'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tsaleh/vim-align'
-Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'vim-scripts/comments.vim'
-Bundle 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'vim-scripts/keepcase.vim'
-Bundle 'vim-scripts/sessionman.vim'
-
-if executable('ctags')
-    Bundle 'vim-scripts/taglist.vim'
-endif
-
-Bundle 'vim-scripts/tlib'
 
 " ===================================
 " Configuration
@@ -192,7 +141,6 @@ nmap <C-h> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR
 nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
 
-" Use local vimrc if available {
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
 endif
