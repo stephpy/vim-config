@@ -128,6 +128,9 @@ endif
 " Mapping
 " ===================================
 
+imap <buffer> <leader>ns <C-O>:call PhpInsertUse()<CR>
+map <buffer> <leader>ns :call PhpInsertUse()<CR>
+
 nmap <Space> <PageDown>
 
 nmap <leader>sl :SessionList<CR>
