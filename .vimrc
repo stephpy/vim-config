@@ -48,9 +48,6 @@ set ignorecase                 " ignore case when searching
 set smarttab
 set hidden
 
-" ad git status on status line
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
 colorscheme vividchalk
 
 " In many terminal emulators the mouse works just fine, thus enable it.
