@@ -25,6 +25,7 @@ set cursorline
 set encoding=utf-8
 
 set nocompatible
+set laststatus=2               " Always show the statusline
 set nobackup                   " delete backup
 set noswapfile
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
@@ -47,13 +48,16 @@ set ignorecase                 " ignore case when searching
 set smarttab
 set hidden
 
-"color
+" ad git status on status line
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 colorscheme vividchalk
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
 endif
+
 
 " ===================================
 " Autocommands
@@ -64,7 +68,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter *.php :%s/[ \t\r]\+$//e
 autocmd BufEnter *.php :retab
-au BufRead,BufNewFile *.twig set ft=twig syntax=htmljinja
+
+autocmd BufNewFile,BufRead *.twig set filetype=twig
+autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+
 " Run php code sniffer and php mess detector
 autocmd FileType php map <C-K> :call phpqa#PhpQaTools(1,1)<CR>
 
@@ -72,7 +79,6 @@ autocmd FileType php map <C-K> :call phpqa#PhpQaTools(1,1)<CR>
 " Bundles configuration
 " ===================================
 
-let g:ragtag_global_maps = 1
 let g:pdv_cfg_php4always=0 "using php5 doc tags
 
 if has('ruby')
@@ -144,4 +150,3 @@ vnoremap <C-D> :call PhpDocRange()<CR>
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
 endif
-" }

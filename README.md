@@ -77,14 +77,6 @@ Plugin list:
         <td>(ONLY IF VIM is NOT compiled with ruby) As on textmate, searching on project a file and open it</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/JDeuce/jinja-syntax">jinja-syntax</a></td>
-        <td>Jinja/Twig Syntax highliting</td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/vim-scripts/keepcase.vim">keepcase.vim</a></td>
-        <td>case tool</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/scrooloose/nerdtree">nerdtree</a></td>
         <td>File navigation</td>
     </tr>
@@ -125,24 +117,8 @@ Plugin list:
         <td>Alignments</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/altercation/vim-colors-solarized">vim-colors-solarized</a></td>
-        <td>Color theme</td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/tpope/vim-cucumber">vim-cucumber</a></td>
-        <td>Syntax highlighting</td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/Lokaltog/vim-easymotion">vim-easymotion</a></td>
-        <td>Use easymotions on VIM</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></td>
         <td>Git tools</td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/michaeljsmith/vim-indent-object">vim-indent-object</a></td>
-        <td>Text Objects based on Indentation Level</td>
     </tr>
     <tr>
         <td><a href="https://github.com/suan/vim-instant-markdown">vim-instant-markdown</a></td>
@@ -161,14 +137,6 @@ Plugin list:
         <td>Vim beautiful !</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/tpope/vim-ragtag">vim-ragtag</a></td>
-        <td>html tips</td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/taq/vim-rspec">vim-rspec</a></td>
-        <td>Enable the use of the spec command inside Vim</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/garbas/vim-snipmate">vim-snipmate</a></td>
         <td>As on textmate, easily add shortcut to create snippets</td>
     </tr>
@@ -185,16 +153,8 @@ Plugin list:
         <td>Twig syntax</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/tpope/vim-unimpaired">vim-unimpaired</a></td>
-        <td>Pairs of handy bracket mappings</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/gmarik/vundle">vundle</a></td>
         <td>Manage bundles</td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/mattn/zencoding-vim">zencoding-vim</a></td>
-        <td>Zencoding for vim</td>
     </tr>
 </table>
 
