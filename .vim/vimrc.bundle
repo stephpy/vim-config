@@ -14,7 +14,7 @@ else
     Bundle 'kien/ctrlp.vim'
 endif
 
-if executable('ack')
+if executable('ack') || executable('ack-grep')
     Bundle 'mileszs/ack.vim'
 endif
 
