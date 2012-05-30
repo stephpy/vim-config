@@ -21,24 +21,24 @@ then
     fi
 fi
 
-if [ -d $HOME/vim-config ]
+if [ -d $HOME/.vim-config ]
 then
-    echo 'vim-config file already exists, backup it ? (y/n)' && read response && \
+    echo '.vim-config file already exists, backup it ? (y/n)' && read response && \
     if [ "$response" == "y" ]
     then
-        mv $HOME/vim-config $HOME/vim-config.$today
+        mv $HOME/.vim-config $HOME/.vim-config.$today
     else
-        rm -rf $HOME/vim-config
+        rm -rf $HOME/.vim-config
     fi
 fi
 
 
 echo "\033[0;34mCloning Vim config\033[0m"
 
-/usr/bin/env git clone git@github.com:stephpy/vim-config.git $HOME/vim-config
+/usr/bin/env git clone git@github.com:stephpy/vim-config.git $HOME/.vim-config
 
-ln -s $HOME/vim-config/.vim $HOME/.vim
-ln -s $HOME/vim-config/.vimrc $HOME/.vimrc
+ln -s $HOME/.vim-config/.vim $HOME/.vim
+ln -s $HOME/.vim-config/.vimrc $HOME/.vimrc
 
 echo "\033[0;34mInstalling vundle \033[0m"
 mkdir $HOME/.vim/bundle

@@ -12,10 +12,10 @@ wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/ins
 OR
 
 ```bash
-git clone git://github.com/stephpy/vim-config.git
+git clone git://github.com/stephpy/vim-config.git ~/.vim-config
 
 # Be sure you backup your .vim (copy them by using cmd "cp ~/.vim ~/.vim.backup")
-ln -s vim-config/.vim ~/.vim
+ln -s ~/.vim-config/.vim ~/.vim
 # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
 ln -s ~/.vimrc ~/.vimrc
 

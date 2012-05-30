@@ -105,7 +105,7 @@ let g:phpqa_codesniffer_args = "--standard=Symfony2"
 let g:phpqa_messdetector_autorun = 0
 " Don't run codesniffer on save (default = 1)
 let g:phpqa_codesniffer_autorun = 0
-" Define by default all rulesets (given in vim-config)
+" Define by default all rulesets (given in ~/.vim-config)
 let g:phpqa_messdetector_ruleset = "~/.vim/vendor/phpmd_rulesets.xml"
 
 " Dont' use autocmd of phpqa"

@@ -23,7 +23,10 @@ Bundle 'scrooloose/syntastic'
 
 Bundle 'stephpy/vim-powerline'
 Bundle 'stephpy/vim-phpdoc'
-Bundle 'stephpy/vim-phpqa'
+
+if has('signs')
+    Bundle 'stephpy/vim-phpqa'
+endif
 
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'stephpy/vim-symfony'
