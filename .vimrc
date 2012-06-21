@@ -147,6 +147,13 @@ map <leader>te :Phpunit %<CR>
 nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
 
+" Because there is a bundle which deactive it ...
+map <C-e> :set expandtab<CR>
+" If you don't want to have validation
+map <leader>s :SyntasticToggleMode<CR>
+" Useful to toggle paste mode"
+set pastetoggle=<leader>p
+
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
 endif
