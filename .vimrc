@@ -69,6 +69,7 @@ autocmd BufEnter *.php :%s/[ \t\r]\+$//e
 autocmd BufEnter *.php :retab
 
 autocmd BufNewFile,BufRead *.twig set filetype=twig
+autocmd BufNewFile,BufRead *.less set filetype=less
 autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
 
 " Run php code sniffer and php mess detector

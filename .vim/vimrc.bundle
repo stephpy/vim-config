@@ -6,6 +6,7 @@ Bundle 'docteurklein/vim-phpunit'
 Bundle 'ervandew/supertab'
 Bundle 'garbas/vim-snipmate'
 Bundle 'gmarik/vundle'
+Bundle 'groenewege/vim-less'
 Bundle 'hallison/vim-markdown'
 
 if has('ruby')
