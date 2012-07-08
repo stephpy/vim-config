@@ -1,13 +1,30 @@
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'Raimondi/delimitMate'
 Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'beyondwords/vim-twig'
 Bundle 'corntrace/bufexplorer'
 Bundle 'docteurklein/vim-phpunit'
 Bundle 'ervandew/supertab'
+Bundle 'everzet/guard-ctags-composer'
 Bundle 'garbas/vim-snipmate'
 Bundle 'gmarik/vundle'
 Bundle 'groenewege/vim-less'
 Bundle 'hallison/vim-markdown'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'stephpy/vim-powerline'
+Bundle 'stephpy/vim-phpdoc'
+Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'stephpy/vim-symfony'
+Bundle 'stephpy/snipmate-snippets'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-align'
+Bundle 'vim-scripts/comments.vim'
+Bundle 'vim-scripts/sessionman.vim'
+Bundle 'vim-scripts/tlib'
 
 if has('ruby')
     Bundle 'wincent/Command-T'
@@ -19,35 +36,14 @@ if executable('ack') || executable('ack-grep')
     Bundle 'mileszs/ack.vim'
 endif
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-
-Bundle 'stephpy/vim-powerline'
-Bundle 'stephpy/vim-phpdoc'
-
 if has('signs')
     Bundle 'stephpy/vim-phpqa'
 endif
-
-Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'stephpy/vim-symfony'
-Bundle 'stephpy/snipmate-snippets'
 
 if executable('instant-markdown-d')
     Bundle 'suan/vim-instant-markdown'
 endif
 
-Bundle 'tpope/vim-abolish'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tsaleh/vim-align'
-Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'vim-scripts/comments.vim'
-Bundle 'vim-scripts/sessionman.vim'
-
 if executable('ctags')
     Bundle 'vim-scripts/taglist.vim'
 endif
-
-Bundle 'vim-scripts/tlib'
-

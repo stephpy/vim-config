@@ -148,12 +148,18 @@ map <leader>te :Phpunit %<CR>
 nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
 vnoremap <C-D> :call PhpDocRange()<CR>
 
+" mapping ctags shortcut to t
+nmap <leader>tj :tjump<CR>
+nmap <leader>tn :tprevious<CR>
+nmap <leader>tn :tnext<CR>
+
 " Because there is a bundle which deactive it ...
 map <C-e> :set expandtab<CR>
 " If you don't want to have validation
 map <leader>s :SyntasticToggleMode<CR>
 " Useful to toggle paste mode"
 set pastetoggle=<leader>p
+set tags+=vendor.tags
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
