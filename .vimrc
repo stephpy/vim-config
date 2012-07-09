@@ -152,6 +152,7 @@ vnoremap <C-D> :call PhpDocRange()<CR>
 nmap <leader>tj :tjump<CR>
 nmap <leader>tn :tprevious<CR>
 nmap <leader>tn :tnext<CR>
+nnoremap <leader><space> :noh<cr>
 
 " Because there is a bundle which deactive it ...
 map <C-e> :set expandtab<CR>
