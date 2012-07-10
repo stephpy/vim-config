@@ -63,9 +63,7 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
 " ===================================
 
 "delete spaces at end of line
-autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead * silent! %s/[\r \t]\+$//
-autocmd BufEnter *.php :%s/[ \t\r]\+$//e
 autocmd BufEnter *.php :retab
 
 autocmd BufNewFile,BufRead *.twig set filetype=twig
