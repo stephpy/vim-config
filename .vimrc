@@ -11,6 +11,10 @@ filetype indent on        " enable loading indent file for filetype
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+if filereadable(expand("~/.vimrc.local.before"))
+    source ~/.vimrc.local.before
+endif
+
 if filereadable(expand("~/.vimrc.bundle"))
     source ~/.vimrc.bundle
 else
@@ -137,14 +141,14 @@ nmap <Space> <PageDown>
 nmap <leader>sl :SessionList<CR>
 nmap <leader>ss :SessionSave<CR>
 
-map <C-y> :NERDTreeToggle<CR>
-map <C-i> :TlistToggle<CR>
-map <C-f> :Ack
+map <leader>y :NERDTreeToggle<CR>
+map <leader>i :TlistToggle<CR>
+map <leader>f :Ack
 map <leader>te :Phpunit %<CR>
 
 " This will align params by using align vim bundle
-nmap <C-D> :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
-vnoremap <C-D> :call PhpDocRange()<CR>
+nmap <leader>d :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
+vnoremap <leader>d :call PhpDocRange()<CR>
 
 " mapping ctags shortcut to t
 nmap <leader>tj :tjump<CR>
@@ -153,7 +157,7 @@ nmap <leader>tn :tnext<CR>
 nnoremap <leader><space> :noh<cr>
 
 " Because there is a bundle which deactive it ...
-map <C-e> :set expandtab<CR>
+map <leader>e :set expandtab<CR>
 " If you don't want to have validation
 map <leader>s :SyntasticToggleMode<CR>
 " Useful to toggle paste mode"
