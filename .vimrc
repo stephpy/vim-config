@@ -164,6 +164,6 @@ map <leader>s :SyntasticToggleMode<CR>
 set pastetoggle=<leader>p
 set tags+=vendor.tags
 
-if filereadable(expand("~/.vimrc.local"))
-    source ~/.vimrc.local
+if filereadable(expand("~/.vimrc.local.after"))
+    source ~/.vimrc.local.after
 endif

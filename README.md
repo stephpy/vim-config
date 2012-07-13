@@ -32,7 +32,7 @@ cd $HOME/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
 ## Properties
 
-Define a `~/.vimrc.local` and set your config on (or bundles)
+Define a `~/.vimrc.local.before` or `~/.vimrc.local.after` and set your config on (or bundles)
 
 ## Bundles
 
@@ -50,10 +50,6 @@ Plugin list:
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="https://github.com/vim-scripts/Auto-pairs">Auto-Pairs</a></td>
-        <td>Close ``[{('""')}]``</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/mileszs/ack.vim">ack.vim</a></td>
         <td>Searching on project, this need ackbetterthangrep</td>
     </tr>
@@ -62,27 +58,36 @@ Plugin list:
         <td>Buffer explorer</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/vim-scripts/comments.vim">comments.vim</a></td>
-        <td>Comments code</td></tr>
-    <tr>
         <td><a href="https://github.com/wincent/Command-T">Command-T</a></td>
         <td>(ONLY IF VIM is compiled with ruby) As on textmate, searching on project a file and open it</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/vim-scripts/comments.vim">comments.vim</a></td>
+        <td>Comments code</td>
     </tr>
     <tr>
         <td><a href="https://github.com/kien/ctrlp.vim">ctrlp.vim</a></td>
         <td>(ONLY IF VIM is NOT compiled with ruby) As on textmate, searching on project a file and open it</td>
     </tr>
     <tr>
+        <td><a href="https://github.com/Raimondi/delimitMate">delimitMate</a></td>
+        <td>Close brackets/quotes</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/evertez/guard-ctags-composer">guard-ctags-composer</a></td>
+        <td>Works with guard to rebuild ctags files</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/scrooloose/nerdtree">nerdtree</a></td>
         <td>File navigation</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/stephpy/phpqa">phpqa</a></td>
-        <td>Php Quality check, Need +signs compilation of vim</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/vim-scripts/sessionman.vim">sessionman.vim</a></td>
         <td>Save session, use old session, etc ...</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/stephpy/snipmate-snippets.vim">Snipmate Snippets</a></td>
+        <td>Snippets like on texmate</td>
     </tr>
     <tr>
         <td><a href="https://github.com/ervandew/supertab">supertab</a></td>
@@ -113,8 +118,16 @@ Plugin list:
         <td>Alignments</td>
     </tr>
     <tr>
+        <td><a href="https://github.com/Lokaltog/vim-easymotion">Easymotion for vim</a></td>
+        <td>Easymotion for vim</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></td>
         <td>Git tools</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/groenewege/vim-less">vim-less</a></td>
+        <td>Less for vim</td>
     </tr>
     <tr>
         <td><a href="https://github.com/suan/vim-instant-markdown">vim-instant-markdown</a></td>
@@ -125,8 +138,24 @@ Plugin list:
         <td>Markdown tools</td>
     </tr>
     <tr>
+        <td><a href="https://github.com/stephpy/vim-php-cs-fixer">vim-php-cs-fixer</a></td>
+        <td>Fix coding standards using psr0, psr1, psr2</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/arnaud-lb/vim-php-namespace">vim-php-namespace</a></td>
+        <td>Generate php namespace for classes</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/stephpy/vim-phpdoc">vim-phpdoc</a></td>
         <td>PHPDoc for classes, methods, vars, php5.3 compliant</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/stephpy/vim-phpqa">vim-phpqa</a></td>
+        <td>Quality analysis</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/docteurklein/vim-phpunit">vim-phpunit</a></td>
+        <td>Phpunit integration on vim</td>
     </tr>
     <tr>
         <td><a href="https://github.com/Lokaltog/vim-powerline">vim-powerline</a></td>
@@ -172,10 +201,9 @@ Shortcuts:
 - CTRL + C             -> to comment line(s) selected
 - CTRL + X             -> to uncomment line(s) selected
 - CTRL + P             -> Command-T OR CTRL-P
-- CTRL + Y             -> Open NerdTree navigation
-- CTRL + F             -> Ack (search on project) **Need ack (betterthangrep.com)**
-- CTRL + D             -> phpdoc on class, methods, vars ...
-- CTRL + K             -> Launch php code sniffer + phpmd
+- <leader> Y           -> Open NerdTree navigation
+- <leader> F           -> Ack (search on project) **Need ack (betterthangrep.com)**
+- <leader> D           -> phpdoc on class, methods, vars ...
+- <leader> K           -> Launch php code sniffer + phpmd
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
-- CTRL + H             -> Adding namespace of a file and the class name (php 5.3)
-- <leader>be           -> Seeing buffer explorer
+- <leader> be          -> Seeing buffer explorer
