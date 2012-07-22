@@ -67,8 +67,8 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
 " ===================================
 
 "delete spaces at end of line
-autocmd BufRead * silent! %s/[\r \t]\+$//
-autocmd BufEnter *.php :retab
+"autocmd BufRead * silent! %s/[\r \t]\+$//
+"autocmd BufEnter *.php :retab
 
 autocmd BufNewFile,BufRead *.twig set filetype=twig
 autocmd BufNewFile,BufRead *.less set filetype=less
@@ -147,7 +147,7 @@ map <leader>f :Ack
 map <leader>te :Phpunit %<CR>
 
 " This will align params by using align vim bundle
-nmap <leader>d :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk\tsp<CR>
+nmap <leader>d :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk<leader>tsp<CR>
 vnoremap <leader>d :call PhpDocRange()<CR>
 
 " mapping ctags shortcut to t
