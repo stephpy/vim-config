@@ -67,9 +67,9 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
 " ===================================
 
 "delete spaces at end of line
-autocmd BufWrite * silent! %s/[\r \t]\+$//
+autocmd BufWritePre * silent! %s/[\r \t]\+$//
 " retab to replace tab by space when you write
-autocmd BufWrite *.php :set et|retab
+autocmd BufWritePre *.php :set et|retab
 
 autocmd BufNewFile,BufRead *.twig set filetype=twig
 autocmd BufNewFile,BufRead *.less set filetype=less
