@@ -130,6 +130,11 @@ if !exists("g:file_exporer_at_startup")
     augroup END
 endif
 
+let g:snipMate = {}
+let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases['php'] = 'php,symfony2'
+
+
 " ===================================
 " Mapping
 " ===================================
