@@ -17,7 +17,7 @@ git clone git://github.com/stephpy/vim-config.git ~/.vim-config
 # Be sure you backup your .vim (copy them by using cmd "cp ~/.vim ~/.vim.backup")
 ln -s ~/.vim-config/.vim ~/.vim
 # Be sure you backup your .vimrc (copy them by using cmd "cp ~/.vimrc ~/.vimrc.backup")
-ln -s ~/.vimrc ~/.vimrc
+ln -s ~/.vim-config/.vimrc ~/.vimrc
 
 mkdir ~/.vim/bundle
 git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
