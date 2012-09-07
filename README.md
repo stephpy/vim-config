@@ -74,7 +74,7 @@ Plugin list:
         <td>Close brackets/quotes</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/evertez/guard-ctags-composer">guard-ctags-composer</a></td>
+        <td><a href="https://github.com/everzet/guard-ctags-composer">guard-ctags-composer</a></td>
         <td>Works with guard to rebuild ctags files</td>
     </tr>
     <tr>
