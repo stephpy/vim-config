@@ -36,10 +36,6 @@ if executable('ack') || executable('ack-grep')
     Bundle 'mileszs/ack.vim'
 endif
 
-if has('signs')
-    Bundle 'stephpy/vim-phpqa'
-endif
-
 if executable('instant-markdown-d')
     Bundle 'suan/vim-instant-markdown'
 endif

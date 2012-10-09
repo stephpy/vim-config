@@ -150,10 +150,6 @@ Plugin list:
         <td>PHPDoc for classes, methods, vars, php5.3 compliant</td>
     </tr>
     <tr>
-        <td><a href="https://github.com/stephpy/vim-phpqa">vim-phpqa</a></td>
-        <td>Quality analysis</td>
-    </tr>
-    <tr>
         <td><a href="https://github.com/docteurklein/vim-phpunit">vim-phpunit</a></td>
         <td>Phpunit integration on vim</td>
     </tr>
@@ -198,12 +194,13 @@ colorscheme molokai
 
 Shortcuts:
 
+``
 - CTRL + C             -> to comment line(s) selected
 - CTRL + X             -> to uncomment line(s) selected
 - CTRL + P             -> Command-T OR CTRL-P
 - <leader> Y           -> Open NerdTree navigation
 - <leader> F           -> Ack (search on project) **Need ack (betterthangrep.com)**
 - <leader> D           -> phpdoc on class, methods, vars ...
-- <leader> K           -> Launch php code sniffer + phpmd
 - CTRL + W then (key)  -> Align lines on key, check on AlignPlugin
 - <leader> be          -> Seeing buffer explorer
+``
