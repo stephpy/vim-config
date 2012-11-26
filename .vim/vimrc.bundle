@@ -23,6 +23,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-align'
 Bundle 'vim-scripts/comments.vim'
+Bundle 'vim-scripts/netrw.vim'
 Bundle 'vim-scripts/sessionman.vim'
 Bundle 'vim-scripts/tlib'
 
