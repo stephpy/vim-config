@@ -147,6 +147,11 @@ nmap <leader>tn :tprevious<CR>
 nmap <leader>tn :tnext<CR>
 nnoremap <leader><space> :noh<cr>
 
+nmap <leader>gst :Gstatus<CR>
+nmap <leader>gco :Gread<CR>
+nmap <leader>gbl :Gblame<CR>
+nmap <leader>gbr :Gbrowse<CR>
+
 " Because there is a bundle which deactive it ...
 map <leader>e :set expandtab<CR>
 " If you don't want to have validation
