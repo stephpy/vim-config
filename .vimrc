@@ -119,6 +119,7 @@ let g:snipMate = {}
 let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['php'] = 'php,symfony2'
 
+let g:neocomplcache_enable_at_startup = 1
 
 " ===================================
 " Mapping
