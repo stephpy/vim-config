@@ -144,9 +144,16 @@ vnoremap <leader>d :call PhpDocRange()<CR>
 
 " mapping ctags shortcut to t
 nmap <leader>tj :tjump<CR>
-nmap <leader>tn :tprevious<CR>
+nmap <leader>tp :tprevious<CR>
 nmap <leader>tn :tnext<CR>
 nnoremap <leader><space> :noh<cr>
+"map <C-l> <C-]> " If you use mac, uncomment it.
+
+imap <leader>ns <C-O>:call PhpInsertUse()<CR>
+map <leader>ns :call PhpInsertUse()<CR>
+
+imap <leader>ne <C-O>:call PhpExpandClass()<CR>
+map <leader>ne :call PhpExpandClass()<CR>
 
 nmap <leader>gst :Gstatus<CR>
 nmap <leader>gco :Gread<CR>
