@@ -27,6 +27,7 @@ endif
 
 set cursorline
 set encoding=utf-8
+set clipboard=unnamed
 
 set nocompatible
 set laststatus=2               " Always show the statusline
@@ -51,6 +52,8 @@ set hlsearch
 set ignorecase                 " ignore case when searching
 set smarttab
 set hidden
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set list
 
 colorscheme vividchalk
 
