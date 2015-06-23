@@ -6,7 +6,7 @@ StephPY VIM config
 One Shot:
 
 ```bash
-wget --no-check-certificate https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
+wget https://raw.github.com/stephpy/vim-config/master/install.sh -O ./install.sh && chmod +x ./install.sh && ./install.sh
 ```
 
 OR
