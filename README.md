@@ -20,7 +20,7 @@ ln -s ~/.vim-config/.vim ~/.vim
 ln -s ~/.vim-config/.vimrc ~/.vimrc
 
 mkdir ~/.vim/bundle
-git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 vim +BundleInstall +qa
 
