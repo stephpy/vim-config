@@ -42,7 +42,7 @@ ln -s $HOME/.vim-config/.vimrc $HOME/.vimrc
 
 echo "\033[0;34mInstalling vundle \033[0m"
 mkdir $HOME/.vim/bundle
-git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 vim +BundleInstall +qa
 
