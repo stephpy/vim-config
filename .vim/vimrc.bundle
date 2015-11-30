@@ -27,12 +27,6 @@ Bundle 'vim-scripts/comments.vim'
 Bundle 'vim-scripts/netrw.vim'
 Bundle 'vim-scripts/tlib'
 
-if has('ruby')
-    Bundle 'wincent/Command-T'
-else
-    Bundle 'kien/ctrlp.vim'
-endif
-
 if executable('ack') || executable('ack-grep')
     Bundle 'mileszs/ack.vim'
 endif

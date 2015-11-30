@@ -9,6 +9,8 @@ filetype plugin on        " enable loading indent file for filetype
 filetype indent on        " enable loading indent file for filetype
 
 set rtp+=~/.vim/bundle/vundle
+set rtp+=/usr/local/opt/fzf
+
 call vundle#rc()
 
 if filereadable(expand("~/.vimrc.local.before"))
@@ -36,6 +38,7 @@ set noswapfile
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 set autoindent                 " always set autoindenting on
+set copyindent                 " copy the previous indentation on autoindenting"
 set history=50                 " keep 50 lines of command line history
 set ruler                      " show the cursor position all the time
 set showcmd                    " display incomplete commands
@@ -47,6 +50,7 @@ set ttyfast                    " smoother changes
 
 set expandtab
 set shiftwidth=4               " nombre d'espace apres un '>>'
+set shiftround                 " use multiple of shiftwidth when indenting with '<' and '>'"
 set tabstop=4                  " nombre de place que prend une tabulation
 set hlsearch
 set ignorecase                 " ignore case when searching
@@ -83,22 +87,6 @@ autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
 " ===================================
 
 let g:pdv_cfg_php4always=0 "using php5 doc tags
-
-if has('ruby')
-    nnoremap <silent> <C-P> :CommandT<CR>
-
-    let g:CommandTMaxFiles=20000
-    let g:CommandTAlwaysShowDotFiles=1
-else
-    let g:ctrlp_match_window_reversed=0
-    let g:ctrlp_working_path_mode = 0
-
-    let g:ctrlp_custom_ignore = {
-                \ 'dir':  '\.git$\|\.hg$\|\.svn$\|cache$\|log$',
-                \ 'file': '\.exe$\|\.so$\|\.dll$\|\.jpg$\|\.gif$\|\.png$',
-                \ }
-endif
-
 let g:symfony_enable_shell_mapping = 1
 
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
@@ -172,3 +160,6 @@ set tags+=vendor.tags
 if filereadable(expand("~/.vimrc.local.after"))
     source ~/.vimrc.local.after
 endif
+
+let $FZF_DEFAULT_COMMAND = 'find . -type f | grep -v "cache/" | grep -v "\.git/" | grep -v "\.mat$"'
+nnoremap <silent> <C-P> :FZF -x<CR>
