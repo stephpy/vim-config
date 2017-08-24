@@ -1,40 +1,31 @@
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'Raimondi/delimitMate'
 Bundle 'arnaud-lb/vim-php-namespace'
+Bundle 'bling/vim-airline'
 Bundle 'corntrace/bufexplorer'
-Bundle 'ervandew/supertab'
-Bundle 'everzet/guard-ctags-composer'
 Bundle 'garbas/vim-snipmate'
 Bundle 'gmarik/vundle'
-Plugin 'godlygeek/tabular'
-Bundle 'groenewege/vim-less'
-Bundle 'hallison/vim-markdown'
+Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'powerline/powerline'
-Bundle 'stephpy/vim-phpdoc'
+Bundle 'stephpy/snipmate-snippets'
 Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'stephpy/vim-phpdoc'
 Bundle 'stephpy/vim-symfony'
 Bundle 'stephpy/vim-twig'
 Bundle 'stephpy/vim-yaml'
-Bundle 'stephpy/snipmate-snippets'
+Bundle 'tlib'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-vividchalk'
 Bundle 'tsaleh/vim-align'
+Bundle 'vim-php/tagbar-phpctags.vim'
 Bundle 'vim-scripts/comments.vim'
-Bundle 'vim-scripts/netrw.vim'
-Bundle 'vim-scripts/tlib'
+Bundle 'w0rp/ale'
+Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'mhinz/vim-signify'
 
 if executable('ack') || executable('ack-grep')
     Bundle 'mileszs/ack.vim'
-endif
-
-if executable('instant-markdown-d')
-    Bundle 'suan/vim-instant-markdown'
-endif
-
-if executable('ctags')
-    Bundle 'vim-scripts/taglist.vim'
 endif

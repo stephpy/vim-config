@@ -1,3 +1,5 @@
+let mapleader = ","
+
 " ===================================
 " s.py .vimrc config
 " contact: py.stephane1(at)gmail.com
@@ -22,6 +24,9 @@ if filereadable(expand("~/.vimrc.bundle"))
 else
     source ~/.vim/vimrc.bundle
 endif
+
+set pastetoggle=<leader>p
+set tags+=vendor.tags
 
 " ===================================
 " Configuration
@@ -66,100 +71,50 @@ if has('mouse')
   set mouse=a
 endif
 
-" phpunit compilation
-com! -nargs=* Phpunit make -c app <q-args> | cw
-
 " ===================================
 " Autocommands
 " ===================================
 
-"delete spaces at end of line
-autocmd BufWritePre !*.xml silent! %s/[\r \t]\+$//
-" retab to replace tab by space when you write
+autocmd BufWritePre *.php silent! %s/[\r \t]\+$//
 autocmd BufWritePre *.php :set et|retab
 
 autocmd BufNewFile,BufRead *.twig set filetype=twig
 autocmd BufNewFile,BufRead *.less set filetype=less
 autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+autocmd vimenter * if !argc() || argv() == ['.'] | NERDTree | endif " open nerdtree when open vim.
+autocmd CompleteDone * pclose
 
 " ===================================
-" Bundles configuration
+" PHP
 " ===================================
 
-let g:pdv_cfg_php4always=0 "using php5 doc tags
-let g:symfony_enable_shell_mapping = 1
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
 
-set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
-
-" you can override it if you want a fileexplorer
-" by default when opening vim on dir
-if !exists("g:file_exporer_at_startup")
-    let g:NERDTreeHijackNetrw=0
-
-    " use 'vim' in your directory and it'll open a nerdtree automatically
-    autocmd vimenter * if !argc() || argv() == ['.'] | NERDTree | endif
-
-    " Disable netrw's autocmd, since we're ALWAYS using NERDTree
-    runtime plugin/netRwPlugin.vim
-    augroup FileExplorer
-      au!
-    augroup END
-endif
-
-let g:snipMate = {}
-let g:snipMate.scope_aliases = {}
-let g:snipMate.scope_aliases['php'] = 'php,symfony2'
+autocmd FileType php inoremap <Leader>ns <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>ns :call PhpInsertUse()<CR>
+autocmd FileType php imap <leader>ne <C-O>:call PhpExpandClass()<CR>
+autocmd FileType php map <leader>ne :call PhpExpandClass()<CR>
+autocmd FileType php nmap <leader>d :call PhpDocSingle()<CR>
+autocmd FileType php vnoremap <leader>d :call PhpDocRange()<CR>
 
 " ===================================
 " Mapping
 " ===================================
 
-imap <buffer> <leader>ns <C-O>:call PhpInsertUse()<CR>
-map <buffer> <leader>ns :call PhpInsertUse()<CR>
-
-nmap <Space> <PageDown>
-
-nmap <leader>sl :SessionList<CR>
-nmap <leader>ss :SessionSave<CR>
-
 map <leader>y :NERDTreeToggle<CR>
-map <leader>i :TlistToggle<CR>
-map <leader>f :Ack
-map <leader>te :Phpunit %<CR>
-
-" This will align params by using align vim bundle
-nmap <leader>d :call PhpDocSingle()<CR><ESC>jv/\/<CR>kkk<leader>tsp<CR>
-vnoremap <leader>d :call PhpDocRange()<CR>
+nmap <leader>gbl :Gblame<CR>
+map <leader>e :set expandtab<CR>
 
 " mapping ctags shortcut to t
-nmap <leader>tj :tjump<CR>
-nmap <leader>tp :tprevious<CR>
-nmap <leader>tn :tnext<CR>
-nnoremap <leader><space> :noh<cr>
-"map <C-l> <C-]> " If you use mac, uncomment it.
-
-imap <leader>ns <C-O>:call PhpInsertUse()<CR>
-map <leader>ns :call PhpInsertUse()<CR>
-
-imap <leader>ne <C-O>:call PhpExpandClass()<CR>
-map <leader>ne :call PhpExpandClass()<CR>
-
-nmap <leader>gst :Gstatus<CR>
-nmap <leader>gco :Gread<CR>
-nmap <leader>gbl :Gblame<CR>
-nmap <leader>gbr :Gbrowse<CR>
-
-" Because there is a bundle which deactive it ...
-map <leader>e :set expandtab<CR>
-" If you don't want to have validation
-map <leader>s :SyntasticToggleMode<CR>
-" Useful to toggle paste mode"
-set pastetoggle=<leader>p
-set tags+=vendor.tags
-
-if filereadable(expand("~/.vimrc.local.after"))
-    source ~/.vimrc.local.after
-endif
+"nmap KK <C-]>
+"nmap JJ <C-T>
+"nmap HH :tprevious<CR>
+"nmap LL :tnext<CR>
 
 let $FZF_DEFAULT_COMMAND = 'find . -type f | grep -v "cache/" | grep -v "\.git/" | grep -v "\.mat$"'
 nnoremap <silent> <C-P> :FZF -x<CR>
+
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
