@@ -6,14 +6,12 @@ let mapleader = ","
 " ===================================
 
 syntax on                 " syntax highlighing
-filetype on               " try to detect filetypes
-filetype plugin on        " enable loading indent file for filetype
-filetype indent on        " enable loading indent file for filetype
+filetype off                  " required
 
 set rtp+=~/.vim/bundle/vundle
 set rtp+=/usr/local/opt/fzf
 
-call vundle#rc()
+call vundle#begin()
 
 if filereadable(expand("~/.vimrc.local.before"))
     source ~/.vimrc.local.before
@@ -24,6 +22,15 @@ if filereadable(expand("~/.vimrc.bundle"))
 else
     source ~/.vim/vimrc.bundle
 endif
+
+call vundle#end()            " required
+
+if filereadable(expand("~/.vimrc.local.after"))
+    source ~/.vimrc.local.after
+endif
+
+
+filetype plugin indent on " required
 
 set pastetoggle=<leader>p
 set tags+=vendor.tags
@@ -107,12 +114,8 @@ autocmd FileType php vnoremap <leader>d :call PhpDocRange()<CR>
 map <leader>y :NERDTreeToggle<CR>
 nmap <leader>gbl :Gblame<CR>
 map <leader>e :set expandtab<CR>
-
-" mapping ctags shortcut to t
-"nmap KK <C-]>
-"nmap JJ <C-T>
-"nmap HH :tprevious<CR>
-"nmap LL :tnext<CR>
+"imap ;; <Esc>
+nmap <c-l> <c-]>
 
 let $FZF_DEFAULT_COMMAND = 'find . -type f | grep -v "cache/" | grep -v "\.git/" | grep -v "\.mat$"'
 nnoremap <silent> <C-P> :FZF -x<CR>

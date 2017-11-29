@@ -27,15 +27,40 @@ vim +BundleInstall +qa
 
 # Override
 
-## Properties
+## Bundles
 
-Define a `~/.vimrc.local.before` and set your config on (or bundles), example:
+Define a `~/.vimrc.bundle` and add your own bundles:
 
 ```
+source ~/.vim/vimrc.bundle
+
+Bundle 'nanotech/jellybeans.vim'
+...
+```
+
+## Properties
+
+Define a `~/.vimrc.local.before` or a `~/.vimrc.local.after` and set your config on (or bundles), example:
+
+```
+" ~/.vimrc.local.after
 let g:pdv_cfg_Author = "Stephane PY <py.stephane1@gmail.com>"
+
 let g:php_cs_fixer_path = "~/bin/php-cs-fixer" 
 let g:php_cs_fixer_rules = "@Symfony,-@PSR1,@PSR2"
-imap ;; <Esc>
+
+let g:gutentags_cache_dir = '~/.vim/gutentags'
+let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
+                            \ '*.phar', '*.ini', '*.rst', '*.md',
+                            \ '*vendor/*/test*', '*vendor/*/Test*',
+                            \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
+                            \ '*var/cache*', '*var/log*']
+
+let g:ale_linters = {'php': ['php', 'hack', 'langserver', 'phpmd', 'phpstan']}
+" I removed phpcs because it's a bit extremist ...
+"let g:ale_linters = {'php': ['php', 'hack', 'langserver', 'phpcs', 'phpmd', 'phpstan']}
+
+colorscheme jellybeans
 ```
 
 -------------------------------------------------
