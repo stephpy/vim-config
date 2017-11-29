@@ -25,11 +25,6 @@ endif
 
 call vundle#end()            " required
 
-if filereadable(expand("~/.vimrc.local.after"))
-    source ~/.vimrc.local.after
-endif
-
-
 filetype plugin indent on " required
 
 set pastetoggle=<leader>p
@@ -121,3 +116,8 @@ let $FZF_DEFAULT_COMMAND = 'find . -type f | grep -v "cache/" | grep -v "\.git/"
 nnoremap <silent> <C-P> :FZF -x<CR>
 
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+if filereadable(expand("~/.vimrc.local.after"))
+    source ~/.vimrc.local.after
+endif
+
