@@ -46,15 +46,6 @@ git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 vim +BundleInstall +qa
 
-if [ "$(vim --version | grep -c +ruby)" == '1' ]
-then
-    echo "\n\n \033[0;32m Configure COMMAND-T !\033[0m"
-    cd $HOME/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make
-else
-    echo "\n\n \033[0;32m Vim has no RUBY variants, ctrlp will be used, not command-t !\033[0m"
-    exit
-fi
-
 echo "\n\n \033[0;32m....D O N E....!\033[0m"
 
 echo "\033[0;32m"'       .__          '"\033[0m"
