@@ -68,7 +68,7 @@ Plug 'tpope/vim-fugitive'
 " others
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible' 
 Plug 'mileszs/ack.vim'
 Plug 'ryanoasis/vim-devicons'
 
@@ -247,4 +247,4 @@ runtime plugin/grepper.vim
 let g:grepper.tools = ['rg', 'ag']
 let g:grepper.ag = { 'grepprg': 'ag --vimgrep --skip-vcs-ignores --hidden --' }
 
-source ~/.config/init.local.vim
+source ~/.config/nvim/init.local.vim
