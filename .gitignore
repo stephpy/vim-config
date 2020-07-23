@@ -1,3 +1,2 @@
-.vim/bundle/*
-.vim/sessions
-.vim/gutentags
+gutentags/*
+init.local.vim
