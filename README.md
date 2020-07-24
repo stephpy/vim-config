@@ -3,7 +3,7 @@ StephPY neoVIM config
 
 # Installation
 
-- [neovim](https://neovim.io/https://neovim.io/) :rocket:
+- [neovim](https://neovim.io/) :rocket:
 - [vimplug](https://github.com/junegunn/vim-plug) because it's the vim package manager :package: 
 - [fzf](https://github.com/junegunn/fzf) :heart:
 - [ripgrep](https://github.com/BurntSushi/ripgrep) to search as fast as :flashlight: in your project files
